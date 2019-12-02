@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575330312120" clover="3.2.0">
-  <project timestamp="1575330312120" name="All files">
-    <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="2" coveredelements="2" complexity="0" loc="1" ncloc="1" packages="1" files="1" classes="1"/>
+<coverage generated="1575331064548" clover="3.2.0">
+  <project timestamp="1575331064548" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="6" coveredelements="6" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
     <file name="array-reverse.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/arrayReverse/array-reverse.js">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="5" count="1" type="stmt"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="60" type="stmt"/>
+      <line num="6" count="3" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
