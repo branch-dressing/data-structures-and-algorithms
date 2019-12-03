@@ -1,8 +1,11 @@
 function reverseArray(array) {
-    let newArray = [];
+    let newArray = new Array(array.length);
+    let x = 0;
     for(let i = array.length - 1; i >= 0; i--) {
-        newArray.push(array[i]);
+        newArray[x] = array[i];
+        x++;
     }
+    console.log(newArray);
     return newArray;
 }
 
