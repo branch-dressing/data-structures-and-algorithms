@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575331064548" clover="3.2.0">
-  <project timestamp="1575331064548" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="6" coveredelements="6" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
-    <file name="array-reverse.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/arrayReverse/array-reverse.js">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="2" count="3" type="stmt"/>
-      <line num="3" count="3" type="stmt"/>
-      <line num="4" count="60" type="stmt"/>
-      <line num="6" count="3" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
-    </file>
+<coverage generated="1575331155199" clover="3.2.0">
+  <project timestamp="1575331155199" name="All files">
+    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
   </project>
 </coverage>
