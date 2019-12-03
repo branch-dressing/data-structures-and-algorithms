@@ -5,7 +5,6 @@ function reverseArray(array) {
         newArray[x] = array[i];
         x++;
     }
-    console.log(newArray);
     return newArray;
 }
 
