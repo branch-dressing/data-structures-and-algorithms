@@ -1,11 +1,17 @@
 function insertShiftArray(array, valueToBeAdded) {
-    //WHITEBOARDING
-    //take array.length divided by two to get the half way point, subtract 1 to get the correct index. Save to variable
-    //loop through array, creating a new array almost identical to old array.
-    //when i = variable from two lines ago, instead of adding old index of array, add valuetobeadded.
-    //continue looping through old array adding the numbers.
+    let returnArray = new Array(array.length + 1);
+    let x = 0;
+    const indexToAddAt = (array.length / 2) - 1;
 
-
+    for(let i = 0; i < array.length; i++) {
+        returnArray[x] = array[i];
+        x++;
+        if(i === indexToAddAt) {
+            returnArray[x] = valueToBeAdded;
+            x++;
+        }
+    }
+    
     return returnArray;
 }
 
