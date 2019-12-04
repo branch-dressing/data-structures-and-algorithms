@@ -1,13 +1,15 @@
-function binarySearch(sortedArray, searchKey) {
-    let indexSearchedKey;
-
-    //WHITEBOARDING
-    //loop through array
-    // on each loop check to see if array[i] === search value
-    //if it does break set i = indexSearchblahblahblah
+function binarySearch(array, searchKey) {
+    let indexSearchedKey = -1;
     
-    return indexSearchedKey || -1;
-};
+    for(let i = 0; i < array.length; i++){
+        if(array[i] === searchKey) {
+            indexSearchedKey = i;
+            break;
+        }
+    }
+    
+    return indexSearchedKey;
+}
 
 module.exports = {
     binarySearch
