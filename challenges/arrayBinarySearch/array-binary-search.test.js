@@ -5,6 +5,7 @@ const {
 describe('Tests Array Binary Search', () => {
     it('takes array and search value, returns index of searched item', () => {
         expect(binarySearch([1], 1)).toEqual(0);
+        expect(binarySearch([4,8,15,16,23,42], 15)).toEqual(2);
     });
 });
 
