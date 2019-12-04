@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575422356261" clover="3.2.0">
-  <project timestamp="1575422356261" name="All files">
-    <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="14" coveredelements="14" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+<coverage generated="1575423408248" clover="3.2.0">
+  <project timestamp="1575423408248" name="All files">
+    <metrics statements="13" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1" elements="17" coveredelements="14" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
     <file name="array-shift.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/arrayShift/array-shift.js">
-      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="13" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
       <line num="2" count="3" type="stmt"/>
       <line num="3" count="3" type="stmt"/>
       <line num="4" count="3" type="stmt"/>
@@ -13,8 +13,10 @@
       <line num="9" count="11" type="cond" truecount="2" falsecount="0"/>
       <line num="10" count="3" type="stmt"/>
       <line num="11" count="3" type="stmt"/>
-      <line num="15" count="3" type="stmt"/>
-      <line num="18" count="1" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

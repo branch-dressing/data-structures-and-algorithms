@@ -1,9 +1,11 @@
 TN:
 SF:/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/arrayShift/array-shift.js
 FN:1,insertShiftArray
-FNF:1
+FN:17,removeMiddle
+FNF:2
 FNH:1
 FNDA:3,insertShiftArray
+FNDA:0,removeMiddle
 DA:2,3
 DA:3,3
 DA:4,3
@@ -13,9 +15,11 @@ DA:8,11
 DA:9,11
 DA:10,3
 DA:11,3
-DA:15,3
-DA:18,1
-LF:11
+DA:14,3
+DA:18,0
+DA:20,0
+DA:26,1
+LF:13
 LH:11
 BRDA:9,0,0,3
 BRDA:9,0,1,8
