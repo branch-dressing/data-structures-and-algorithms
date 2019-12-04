@@ -1,5 +1,5 @@
 function insertShiftArray(array, valueToBeAdded) {
-    let returnArray = new Array(array.length + 1);
+    let returnArray = [];
     let x = 0;
     const indexToAddAt = Math.ceil(array.length / 2) -  1;
 
@@ -16,10 +16,16 @@ function insertShiftArray(array, valueToBeAdded) {
 
 function removeMiddle(array) {
     const indexToDelete = Math.ceil(array.length / 2) - 1;
+    let returnArray = [];
+    let x = 0;
 
-    for(let i = 0; i < array.length - 1; i++) {
-
+    for(let i = 0; i < array.length; i++) {
+        if(i !== indexToDelete) {
+            returnArray[x] = array[i];
+            x++;
+        }
     }
+    return returnArray;
 
 }
 
