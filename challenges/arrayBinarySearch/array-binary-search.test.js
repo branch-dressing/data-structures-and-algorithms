@@ -1,10 +1,10 @@
-function binarySearch(sortedArray, searchKey) {
-    let indexSearchedKey;
+const {
+    binarySearch
+} = require('./array-binary-search.js');
 
-    //WHITEBOARDING
-    //loop through array
-    // on each loop check to see if array[i] === search value
-    //if it does break set i = indexSearchblahblahblah
-    
-    return indexSearchedKey || -1;
-}
+describe('Tests Array Binary Search', () => {
+    it('takes array and search value, returns index of searched item', () => {
+        expect(binarySearch([1], 1)).toEqual(0);
+    });
+});
+
