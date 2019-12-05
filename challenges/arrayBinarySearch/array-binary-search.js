@@ -1,14 +1,23 @@
 function binarySearch(array, searchKey) {
-    let indexSearchedKey = -1;
+    let topLimit = array.length;
+    let bottomLimit = 0;
+    let halfwayIndex = Math.floor(array.length / 2);
     
-    for(let i = 0; i < array.length; i++){
-        if(array[i] === searchKey) {
-            indexSearchedKey = i;
-            break;
+    let i = 0;
+    while(i < array.length) {
+        if(array[halfwayIndex] === searchKey) {
+            return halfwayIndex;
+        } else if(array[halfwayIndex] > searchKey) {
+            topLimit = halfwayIndex;
+            
+        } else if(array[halfwayIndex] < searchKey) {
+            bottomLimit = halfwayIndex; 
         }
+        halfwayIndex = Math.floor((bottomLimit + topLimit) / 2);
+        i++;
     }
     
-    return indexSearchedKey;
+    return -1;
 }
 
 module.exports = {
