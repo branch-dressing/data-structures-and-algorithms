@@ -24,4 +24,4 @@ describe('Test fib', () => {
         expect(fib(14)).toEqual(377);
         expect(fib(45)).toEqual(1134903170);
     });
-})
+});
