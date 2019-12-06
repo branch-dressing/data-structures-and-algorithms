@@ -1,10 +1,9 @@
 function binarySearch(array, searchKey) {
+    let halfwayIndex = Math.floor(array.length / 2);
     let topLimit = array.length;
     let bottomLimit = 0;
-    let halfwayIndex = Math.floor(array.length / 2);
     
-    let i = 0;
-    while(i < array.length) {
+    while(topLimit - bottomLimit >= 0) {
         if(array[halfwayIndex] === searchKey) {
             return halfwayIndex;
         } else if(array[halfwayIndex] > searchKey) {
@@ -14,7 +13,6 @@ function binarySearch(array, searchKey) {
             bottomLimit = halfwayIndex; 
         }
         halfwayIndex = Math.floor((bottomLimit + topLimit) / 2);
-        i++;
     }
     
     return -1;
