@@ -16,15 +16,15 @@ function matrixRowsSummed(matrix) {
 function fib(int) {
     let fibAtInt = 1;
     let previousNumber = 0;
-    let temp;
+    let nextNumber;
 
     if(int === 0) return 0;
     if(int === 1) return 1;
 
     for(let i = 2; i <= int; i++) {
-        temp = fibAtInt + previousNumber;
+        nextNumber = fibAtInt + previousNumber;
         previousNumber = fibAtInt;
-        fibAtInt = temp;
+        fibAtInt = nextNumber;
 
     }
     return fibAtInt;
@@ -34,10 +34,3 @@ module.exports = {
     matrixRowsSummed,
     fib
 };
-
-// test would look isPatternLike
-
-// [[1]] expecty [1]
-// [[1], [2]] expect [1, 2]
-// [[1, 2]] expect [3]
-// [[1, 2], [3, 4]] expect [3, 7] 
