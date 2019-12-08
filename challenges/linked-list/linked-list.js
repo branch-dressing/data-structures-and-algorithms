@@ -53,4 +53,7 @@ class LinkedList {
 
 
 
-module.exports = Node;
+module.exports = {
+    Node,
+    LinkedList
+};

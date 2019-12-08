@@ -1,7 +1,11 @@
-const Node = require('./linked-list.js');
+const { 
+    Node,
+    LinkedList
+} = require('./linked-list.js');
 
 describe('Linked List tests', () => {
-    it('will do something', () => {
-        
-    })
-})
+    it('creates a new node with given values', () => {
+        const newNode = new Node(5, 'node1');
+        expect(newNode.head.value).toEqual(5);
+    });
+});
