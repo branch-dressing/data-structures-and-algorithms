@@ -17,7 +17,14 @@ describe('Linked-List tests', () => {
             expect(myLinkedList).toEqual({ head: { next : null, value: 0 }
             });
             expect(myLinkedList.insert(1).head.next.value).toEqual(0);
-            expect(myLinkedList.insert(2).head.next).toEqual('');
         });
+        it('can find if a value is in the list', () => {
+            myLinkedList.insert(2);
+            myLinkedList.insert(3);
+            myLinkedList.insert(4);
+            myLinkedList.insert(5);
+            expect(myLinkedList.includes(0)).toEqual(true);
+        })
+
     });
 });
