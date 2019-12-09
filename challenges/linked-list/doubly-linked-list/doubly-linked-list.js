@@ -13,6 +13,7 @@ class DoublyLinkedList {
     insert(value) {
         const newNode = new Node(value);
         newNode.next = this.head;
+        if(newNode.next) newNode.next.previous = newNode;
         this.head = newNode;
         return this;
     }
