@@ -1,7 +1,3 @@
-//WHITEBOARDING
-
-
-//Create a Node Class
 class Node {
     constructor(value) {
         this.value = value;
@@ -21,10 +17,6 @@ class LinkedList {
         return this;
     }
 
-    //needs method called includes
-    //takes any value
-    //returns boolean
-    //depending on whether that value exists as a nodes value in the list
     includes(value) {
         let thisNode = this.head;
         while(thisNode){
@@ -32,13 +24,6 @@ class LinkedList {
             thisNode = thisNode.next;
         }
         return false;
-
-
-        //looks at head,
-        //does it have value?
-        //if yes return true
-        //if no look to the next node
-        //this can be done in a while look while node.next !== null
     }
 
     //has a method called toString
