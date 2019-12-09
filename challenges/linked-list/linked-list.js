@@ -3,28 +3,36 @@
 
 //Create a Node Class
 class Node {
+    constructor(value) {
+        this.value = value;
+    }
 }
 
 class LinkedList {
-    constructor(value, next) {
-        this.head = {
-            value: value,
-            next: next
-        };
+    constructor(value) {
+        this.head = null;
+        this.insert(value);
     }
-    
-    insert(value, next) {
-        const Node = new Node(value, next);
+
+    insert(value) {
+        const newNode = new Node(value);
+        newNode.next = this.head;
+        this.head = newNode;
+        return this;
     }
 
     //needs method called includes
-        //takes any value
-        //returns boolean
-        //depending on whether that value exists as a nodes value in the list
+    //takes any value
+    //returns boolean
+    //depending on whether that value exists as a nodes value in the list
     includes(value) {
-        //while(!node.next)
-        //if(currentnode.head.value = value) return true
-        //let node = node.next
+        let thisNode = this;
+        while(thisNode){
+            if(thisNode.head.value === value) return true;
+            console.log(thisNode.head.value);
+            thisNode = thisNode.head.next;
+        }
+        return false;
 
 
         //looks at head,
@@ -32,12 +40,11 @@ class LinkedList {
         //if yes return true
         //if no look to the next node
         //this can be done in a while look while node.next !== null
-        returns //Boolean
     }
 
     //has a method called toString
-        //which take in no args
-        //returns a string representing all the values in the linked list.
+    //which take in no args
+    //returns a string representing all the values in the linked list.
     toString() {
         //create emprty string
         //start at head
@@ -51,5 +58,6 @@ class LinkedList {
 
 
 module.exports = {
+    Node,
     LinkedList
 };
