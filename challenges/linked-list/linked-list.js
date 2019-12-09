@@ -3,26 +3,18 @@
 
 //Create a Node Class
 class Node {
-    //upon instantiation, an empty linked list should be created
-    constructor(value, next) {
-        //needs head property
-        this.head = {
-            //has properties for the value stored in the node
-            value: value,
-            //has point to the next Node
-            next: next
-        };
-    }
 }
 
 class LinkedList {
-    //needs method called insert
-        //takes any value as an arg
-        //adds a new node with that value to the head of the list
-
-//how is this differnt from constructor???
-    insert(value) {
-        const Node = new Node({ value, next });
+    constructor(value, next) {
+        this.head = {
+            value: value,
+            next: next
+        };
+    }
+    
+    insert(value, next) {
+        const Node = new Node(value, next);
     }
 
     //needs method called includes
@@ -30,6 +22,11 @@ class LinkedList {
         //returns boolean
         //depending on whether that value exists as a nodes value in the list
     includes(value) {
+        //while(!node.next)
+        //if(currentnode.head.value = value) return true
+        //let node = node.next
+
+
         //looks at head,
         //does it have value?
         //if yes return true
@@ -54,6 +51,5 @@ class LinkedList {
 
 
 module.exports = {
-    Node,
     LinkedList
 };
