@@ -24,7 +24,10 @@ describe('Linked-List tests', () => {
             myLinkedList.insert(4);
             myLinkedList.insert(5);
             expect(myLinkedList.includes(0)).toEqual(true);
-        })
+            expect(myLinkedList.includes(3)).toEqual(true);
+            expect(myLinkedList.includes(5)).toEqual(true);
+            expect(myLinkedList.includes(10)).toEqual(false);
+        });
 
     });
 });

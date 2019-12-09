@@ -26,11 +26,10 @@ class LinkedList {
     //returns boolean
     //depending on whether that value exists as a nodes value in the list
     includes(value) {
-        let thisNode = this;
+        let thisNode = this.head;
         while(thisNode){
-            if(thisNode.head.value === value) return true;
-            console.log(thisNode.head.value);
-            thisNode = thisNode.head.next;
+            if(thisNode.value === value) return true;
+            thisNode = thisNode.next;
         }
         return false;
 
