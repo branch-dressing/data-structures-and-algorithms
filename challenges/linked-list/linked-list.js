@@ -30,6 +30,13 @@ class LinkedList {
     //which take in no args
     //returns a string representing all the values in the linked list.
     toString() {
+        let thisNode = this.head;
+        let valuesStringed = [];
+        while(thisNode){
+            valuesStringed.push(thisNode.value);
+            thisNode = thisNode.next;
+        }
+        return valuesStringed;
         //create emprty string
         //start at head
         //add node.value to string,
