@@ -26,9 +26,6 @@ class LinkedList {
         return false;
     }
 
-    //has a method called toString
-    //which take in no args
-    //returns a string representing all the values in the linked list.
     toString() {
         let thisNode = this.head;
         let valuesStringed = [];
@@ -37,16 +34,8 @@ class LinkedList {
             thisNode = thisNode.next;
         }
         return valuesStringed;
-        //create emprty string
-        //start at head
-        //add node.value to string,
-        //go to next, add to string
-        //do in while loop while node.next !== null
-        //returns a string
     }
 }
-
-
 
 module.exports = {
     Node,

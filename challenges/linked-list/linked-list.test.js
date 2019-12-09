@@ -30,7 +30,7 @@ describe('Linked-List tests', () => {
         });
         it('can turn return all node values as strings', () => {
             expect(myLinkedList.toString()).toEqual([5, 4, 3, 2, 1, 0]);
-        })
+        });
 
     });
 });
