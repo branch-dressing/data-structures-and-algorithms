@@ -117,9 +117,13 @@ class DoublyLinkedList {
         let thisNode = this.head;
 
         while(thisNode.next) thisNode = thisNode.next;
-        for(let i = 0; i !== k; i++) thisNode = thisNode.previous;
+        for(let i = 0; i !== k; i++) {
+            if(!thisNode) return;
+            thisNode = thisNode.previous;
+        }
 
-        return thisNode.value;
+        if(thisNode) return thisNode.value;
+        return 'Number exceeds length';
     }
 }
 
