@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576004657916" clover="3.2.0">
-  <project timestamp="1576004657916" name="All files">
-    <metrics statements="69" coveredstatements="64" conditionals="32" coveredconditionals="29" methods="10" coveredmethods="9" elements="111" coveredelements="102" complexity="0" loc="69" ncloc="69" packages="1" files="1" classes="1"/>
+<coverage generated="1576004962164" clover="3.2.0">
+  <project timestamp="1576004962164" name="All files">
+    <metrics statements="78" coveredstatements="73" conditionals="32" coveredconditionals="29" methods="11" coveredmethods="10" elements="121" coveredelements="112" complexity="0" loc="78" ncloc="78" packages="1" files="1" classes="1"/>
     <file name="doubly-linked-list.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/linked-list/doubly-linked-list/doubly-linked-list.js">
-      <metrics statements="69" coveredstatements="64" conditionals="32" coveredconditionals="29" methods="10" coveredmethods="9"/>
+      <metrics statements="78" coveredstatements="73" conditionals="32" coveredconditionals="29" methods="11" coveredmethods="10"/>
       <line num="3" count="16" type="stmt"/>
       <line num="9" count="3" type="stmt"/>
       <line num="10" count="3" type="stmt"/>
@@ -72,7 +72,16 @@
       <line num="123" count="14" type="stmt"/>
       <line num="126" count="6" type="cond" truecount="2" falsecount="0"/>
       <line num="127" count="2" type="stmt"/>
+      <line num="131" count="1" type="stmt"/>
+      <line num="132" count="1" type="stmt"/>
       <line num="133" count="1" type="stmt"/>
+      <line num="134" count="3" type="stmt"/>
+      <line num="135" count="3" type="stmt"/>
+      <line num="137" count="1" type="stmt"/>
+      <line num="138" count="1" type="stmt"/>
+      <line num="139" count="1" type="stmt"/>
+      <line num="140" count="1" type="stmt"/>
+      <line num="144" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
