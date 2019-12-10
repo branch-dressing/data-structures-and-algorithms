@@ -83,7 +83,10 @@ describe('k-th value from end of a linked list', () => {
 
     it('can return the value of k-th from end of a LL', () => {
         expect(doublyLinked2.kthFromEnd(0)).toEqual('a');
+        expect(doublyLinked2.kthFromEnd(3)).toEqual('d');
     });
+
+    //it('can')
 
 });
 
