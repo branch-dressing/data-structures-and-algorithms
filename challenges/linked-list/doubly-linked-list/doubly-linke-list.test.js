@@ -31,6 +31,7 @@ describe('Doubly Linked-List tests', () => {
             expect(myDoubleLink.head.next.value).toEqual(1);
             myDoubleLink.insertBefore(1, 'x');
             expect(myDoubleLink.head.next.value).toEqual('x');
+            console.log(myDoubleLink);
         });
 
     });

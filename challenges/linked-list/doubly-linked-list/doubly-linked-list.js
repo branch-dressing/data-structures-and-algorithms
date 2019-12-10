@@ -40,11 +40,17 @@ class DoublyLinkedList {
     append(value) {
         const appendedNode = new Node(value);
         let thisNode = this.head;
-        while(thisNode.next) {
-            thisNode = thisNode.next;
-        }
+        while(thisNode.next) thisNode = thisNode.next;
         appendedNode.next = null;
         thisNode.next = appendedNode;
+    }
+
+    insertBefore(value, newValue) {
+        const insertedNode = new Node(newValue);
+        let thisNode = this.head;
+        while(thisNode.value !== value) thisNode = thisNode.next;
+        thisNode.previous.next = insertedNode; 
+        insertedNode.next = thisNode;
     }
 }
 
