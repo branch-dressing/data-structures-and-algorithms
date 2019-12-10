@@ -61,7 +61,15 @@ class DoublyLinkedList {
         while(thisNode.value !== value) thisNode = thisNode.next;
         insertedNode.previous = thisNode;
         insertedNode.next = thisNode.next;
+        thisNode.next.previous = insertedNode;
         thisNode.next = insertedNode;
+    }
+
+    delete(value) {
+        let thisNode = this.head;
+        while(thisNode.value !== value) thisNode = thisNode.next;
+        thisNode.previous.next = thisNode.next;
+        thisNode.next.previous = thisNode.previous;
     }
 }
 

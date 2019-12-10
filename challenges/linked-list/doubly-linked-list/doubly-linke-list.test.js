@@ -37,13 +37,12 @@ describe('Doubly Linked-List tests', () => {
         });
         it('can delete a node given a value', () => {
             myDoubleLink.delete(1);
-            //myDoubleLink.delete(2);
-            //myDoubleLink.delete(0);
             expect(myDoubleLink.toString()).toEqual([2, 'b', 'c', 0, 'a']);
+            myDoubleLink.delete(0);
+            expect(myDoubleLink.toString()).toEqual([2, 'b', 'c', 'a']);
+            // myDoubleLink.delete(2);
+            // expect(myDoubleLink.toString()).toEqual(['b', 'c', 'a']);
         });
     });
 });
 
-// [2,     1,        'x',            0]
-// [2, thisNode, insertedNode, thisNode.next]
-// [2, thisNode, thisNode.next, insertedNode.next]
