@@ -27,12 +27,15 @@ describe('Doubly Linked-List tests', () => {
             myDoubleLink.append('x');
             expect(myDoubleLink.head.next.next.next.value).toEqual('x');
         });
-        it('can insert a new node somewhere in the list', () => {
+        it('can insert a new node before a value', () => {
             expect(myDoubleLink.head.next.value).toEqual(1);
             myDoubleLink.insertBefore(1, 'x');
             expect(myDoubleLink.head.next.value).toEqual('x');
-            console.log(myDoubleLink);
         });
-
+        it('can insert a new node after a value', () => {
+            expect(myDoubleLink.head.next.next.value).toEqual(1);
+            myDoubleLink.insertAfter(1, 'x');
+            expect(myDoubleLink.head.next.next.value).toEqual('x');
+        });
     });
 });
