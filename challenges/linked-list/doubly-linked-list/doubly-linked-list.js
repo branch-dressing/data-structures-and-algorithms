@@ -135,7 +135,7 @@ class DoublyLinkedList {
             thisNode = thisNode.next;
         }
         thisNode = this.head;
-        let midIndex = Math.floor(length / 2)
+        let midIndex = Math.floor(length / 2);
         for(let i = 0; i < midIndex; i++) thisNode = thisNode.next;
         return thisNode.value;
     }
