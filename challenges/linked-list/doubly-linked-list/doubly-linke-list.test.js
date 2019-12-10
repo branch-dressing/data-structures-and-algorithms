@@ -83,10 +83,14 @@ describe('k-th value from end of a linked list', () => {
 
     it('can return the value of k-th from end of a LL', () => {
         expect(doublyLinked2.kthFromEnd(0)).toEqual('a');
+        expect(doublyLinked2.kthFromEnd(1)).toEqual('b');
+        expect(doublyLinked2.kthFromEnd(2)).toEqual('c');
         expect(doublyLinked2.kthFromEnd(3)).toEqual('d');
     });
 
-    //it('can')
+    it('can will let you know if you look for a k-th beyond the length', () => {
+        expect(doublyLinked2.kthFromEnd(4)).toEqual('Number exceeds length');
+    })
 
 });
 
