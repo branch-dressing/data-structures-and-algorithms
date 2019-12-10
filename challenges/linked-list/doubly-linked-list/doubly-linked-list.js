@@ -114,11 +114,12 @@ class DoublyLinkedList {
     }
 
     kthFromEnd(k) {
+        if(typeof k !== 'number' || k < 0) return 'Input must be positive int';
         let thisNode = this.head;
 
         while(thisNode.next) thisNode = thisNode.next;
         for(let i = 0; i !== k; i++) {
-            if(!thisNode) return;
+            if(!thisNode) break;
             thisNode = thisNode.previous;
         }
 
