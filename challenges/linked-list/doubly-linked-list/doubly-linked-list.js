@@ -112,6 +112,15 @@ class DoublyLinkedList {
             this.head = thisNode.next;
         }
     }
+
+    kthFromEnd(k) {
+        let thisNode = this.head;
+
+        while(thisNode.next) thisNode = thisNode.next;
+        for(let i = 0; i !== k; i++) thisNode = thisNode.previous;
+
+        return thisNode.value;
+    }
 }
 
 module.exports = {
