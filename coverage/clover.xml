@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575612905621" clover="3.2.0">
-  <project timestamp="1575612905621" name="All files">
-    <metrics statements="9" coveredstatements="9" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="16" coveredelements="16" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
-    <file name="array-binary-search.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/arrayBinarySearch/array-binary-search.js">
-      <metrics statements="9" coveredstatements="9" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-      <line num="2" count="14" type="stmt"/>
-      <line num="3" count="14" type="stmt"/>
-      <line num="5" count="14" type="stmt"/>
-      <line num="6" count="40" type="stmt"/>
-      <line num="7" count="40" type="cond" truecount="2" falsecount="0"/>
-      <line num="8" count="28" type="cond" truecount="2" falsecount="0"/>
-      <line num="9" count="28" type="cond" truecount="2" falsecount="0"/>
-      <line num="11" count="2" type="stmt"/>
-      <line num="14" count="1" type="stmt"/>
+<coverage generated="1575912482914" clover="3.2.0">
+  <project timestamp="1575912482914" name="All files">
+    <metrics statements="20" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="3" elements="29" coveredelements="14" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
+    <file name="doubly-linked-list.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/linked-list/doubly-linked-list/doubly-linked-list.js">
+      <metrics statements="20" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="3"/>
+      <line num="3" count="6" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="14" count="5" type="stmt"/>
+      <line num="15" count="5" type="stmt"/>
+      <line num="16" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="5" type="stmt"/>
+      <line num="18" count="5" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="32" count="0" type="stmt"/>
+      <line num="33" count="0" type="stmt"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="35" count="0" type="stmt"/>
+      <line num="37" count="0" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
