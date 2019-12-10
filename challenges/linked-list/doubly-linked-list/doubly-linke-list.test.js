@@ -90,6 +90,10 @@ describe('k-th value from end of a linked list', () => {
 
     it('can will let you know if you look for a k-th beyond the length', () => {
         expect(doublyLinked2.kthFromEnd(4)).toEqual('Number exceeds length');
+    });
+
+    it('notifies if wrong input', () => {
+        expect(doublyLinked2.kthFromEnd('a')).toEqual('Input must be positive int');
     })
 
 });
