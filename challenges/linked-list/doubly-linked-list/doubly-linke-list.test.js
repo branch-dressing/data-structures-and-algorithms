@@ -106,6 +106,12 @@ describe('LL find Middle', () => {
 
     it('can find the middle of a LL', () => {
         expect(findMiddleList.findMiddle()).toEqual(2);
-    })
+        findMiddleList.insert(4);
+        expect(findMiddleList.findMiddle()).toEqual(2);
+        findMiddleList.insert(5);
+        findMiddleList.insert(6);
+        expect(findMiddleList.findMiddle()).toEqual(3);
+    });
+
 });
 
