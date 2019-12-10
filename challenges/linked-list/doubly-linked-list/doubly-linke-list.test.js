@@ -24,18 +24,20 @@ describe('Doubly Linked-List tests', () => {
 
     describe('Extended Double Link tests', () => {
         it('appends a node to the end of the list', () => {
-            myDoubleLink.append('x');
-            expect(myDoubleLink.head.next.next.next.value).toEqual('x');
+            myDoubleLink.append('a');
+            expect(myDoubleLink.toString()).toEqual([2, 1, 0, 'a']);
         });
         it('can insert a new node before a value', () => {
-            expect(myDoubleLink.head.next.value).toEqual(1);
-            myDoubleLink.insertBefore(1, 'x');
-            expect(myDoubleLink.head.next.value).toEqual('x');
+            myDoubleLink.insertBefore(1, 'b');
+            expect(myDoubleLink.toString()).toEqual([2, 'b', 1, 0, 'a']);
         });
         it('can insert a new node after a value', () => {
-            expect(myDoubleLink.head.next.next.value).toEqual(1);
-            myDoubleLink.insertAfter(1, 'x');
-            expect(myDoubleLink.head.next.next.value).toEqual('x');
+            myDoubleLink.insertAfter(1, 'c');
+            expect(myDoubleLink.toString()).toEqual([2, 'b', 1, 'c', 0, 'a']);
         });
     });
 });
+
+// [2,     1,        'x',            0]
+// [2, thisNode, insertedNode, thisNode.next]
+// [2, thisNode, thisNode.next, insertedNode.next]

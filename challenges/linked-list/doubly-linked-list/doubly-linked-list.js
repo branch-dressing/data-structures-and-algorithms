@@ -49,8 +49,19 @@ class DoublyLinkedList {
         const insertedNode = new Node(newValue);
         let thisNode = this.head;
         while(thisNode.value !== value) thisNode = thisNode.next;
+        insertedNode.previous = thisNode.previous;
         thisNode.previous.next = insertedNode; 
+        thisNode.previous = insertedNode;
         insertedNode.next = thisNode;
+    }
+
+    insertAfter(value, newValue) {
+        const insertedNode = new Node(newValue);
+        let thisNode = this.head;
+        while(thisNode.value !== value) thisNode = thisNode.next;
+        insertedNode.previous = thisNode;
+        insertedNode.next = thisNode.next;
+        thisNode.next = insertedNode;
     }
 }
 
