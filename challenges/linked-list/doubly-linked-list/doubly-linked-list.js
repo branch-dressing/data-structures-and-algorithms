@@ -126,6 +126,8 @@ class DoublyLinkedList {
         if(thisNode) return thisNode.value;
         return 'Number exceeds length';
     }
+
+    
 }
 
 module.exports = {

@@ -97,6 +97,15 @@ describe('k-th value from end of a linked list', () => {
         expect(doublyLinked2.kthFromEnd('a')).toEqual('Input must be positive int');
         expect(doublyLinked2.kthFromEnd(-1)).toEqual('Input must be positive int');
     });
+});
 
+describe('LL find Middle', () => {
+    const findMiddleList = new DoublyLinkedList(1);
+    findMiddleList.insert(2);
+    findMiddleList.insert(3);
+
+    it('can find the middle of a LL', () => {
+        expect(findMiddleList.findMiddle()).toEqual(2);
+    })
 });
 

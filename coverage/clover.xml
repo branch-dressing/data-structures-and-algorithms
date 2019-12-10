@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576004376627" clover="3.2.0">
-  <project timestamp="1576004376627" name="All files">
+<coverage generated="1576004657916" clover="3.2.0">
+  <project timestamp="1576004657916" name="All files">
     <metrics statements="69" coveredstatements="64" conditionals="32" coveredconditionals="29" methods="10" coveredmethods="9" elements="111" coveredelements="102" complexity="0" loc="69" ncloc="69" packages="1" files="1" classes="1"/>
     <file name="doubly-linked-list.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/linked-list/doubly-linked-list/doubly-linked-list.js">
       <metrics statements="69" coveredstatements="64" conditionals="32" coveredconditionals="29" methods="10" coveredmethods="9"/>
-      <line num="3" count="13" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="10" count="2" type="stmt"/>
-      <line num="14" count="7" type="stmt"/>
-      <line num="15" count="7" type="stmt"/>
-      <line num="16" count="7" type="cond" truecount="2" falsecount="0"/>
-      <line num="17" count="7" type="stmt"/>
-      <line num="18" count="7" type="stmt"/>
+      <line num="3" count="16" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="14" count="10" type="stmt"/>
+      <line num="15" count="10" type="stmt"/>
+      <line num="16" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="10" type="stmt"/>
+      <line num="18" count="10" type="stmt"/>
       <line num="22" count="0" type="stmt"/>
       <line num="23" count="0" type="stmt"/>
       <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -72,7 +72,7 @@
       <line num="123" count="14" type="stmt"/>
       <line num="126" count="6" type="cond" truecount="2" falsecount="0"/>
       <line num="127" count="2" type="stmt"/>
-      <line num="131" count="1" type="stmt"/>
+      <line num="133" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
