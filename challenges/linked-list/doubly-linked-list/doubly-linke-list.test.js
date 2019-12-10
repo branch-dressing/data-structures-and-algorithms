@@ -27,8 +27,8 @@ describe('Doubly Linked-List tests', () => {
 
     describe('Extended Double Link tests', () => {
         it('appends a node to the end of the list', () => {
-            myDoubleLink.append('append me');
-            expect(myDoubleLink.head.next.next.next.next.next.next.value).toEqual('append me');
+            myDoubleLink.append(10);
+            expect(myDoubleLink.head.next.next.next.next.next.value).toEqual(10);
         });
     });
 });

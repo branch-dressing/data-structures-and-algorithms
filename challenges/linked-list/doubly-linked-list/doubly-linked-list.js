@@ -36,6 +36,16 @@ class DoublyLinkedList {
         }
         return valuesStringed;
     }
+
+    append(value) {
+        const appendedNode = new Node(value);
+        let thisNode = this.head;
+        while(thisNode.next) {
+            thisNode = thisNode.next;
+        }
+        appendedNode.next = null;
+        thisNode.next = appendedNode;
+    }
 }
 
 module.exports = {
