@@ -75,3 +75,15 @@ describe('Doubly Linked-List tests', () => {
     });
 });
 
+describe('k-th value from end of a linked list', () => {
+    const doublyLinked2 = new DoublyLinkedList('a');
+    doublyLinked2.insert('b');
+    doublyLinked2.insert('c');
+    doublyLinked2.insert('d');
+
+    it('can return the value of k-th from end of a LL', () => {
+        expect(doublyLinked2.kthFromEnd(0)).toEqual('a');
+    });
+
+});
+
