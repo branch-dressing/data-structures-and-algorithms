@@ -73,5 +73,21 @@ describe('Doubly Linked-List tests', () => {
                 ['null<-2->b', '2<-b->c', 'b<-c->0', 'c<-0->a', '0<-a->null']);
         });
     });
+
+    describe('Mergin Linked List', () => {
+        const mergeListOne = new DoublyLinkedList(0);
+        mergeListOne.insert(1);
+        mergeListOne.insert(2);
+
+        const mergeListTwo = new DoublyLinkedList(10);
+        mergeListTwo.insert(9);
+        mergeListTwo.insert(8);
+        it('can merge two even LL', () => {
+            mergeListOne.mergList(mergeListTwo)
+            expect(mergeListOne.toExplicitArray()).toEqual(
+                ['null<-2->b', '2<-b->c', 'b<-c->0', 'c<-0->a', '0<-a->null']
+            );
+        });
+    });
 });
 
