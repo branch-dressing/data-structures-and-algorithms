@@ -80,9 +80,7 @@ class DoublyLinkedList {
     insertAfter(value, newValue) {
         const insertedNode = new Node(newValue);
         let thisNode = this.head;
-
         while(thisNode.value !== value) thisNode = thisNode.next;
-        
         
         if(thisNode.next) {
             insertedNode.next = thisNode.next;

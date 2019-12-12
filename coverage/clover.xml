@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576123262283" clover="3.2.0">
-  <project timestamp="1576123262283" name="All files">
+<coverage generated="1576123995534" clover="3.2.0">
+  <project timestamp="1576123995534" name="All files">
     <metrics statements="68" coveredstatements="63" conditionals="26" coveredconditionals="23" methods="10" coveredmethods="9" elements="104" coveredelements="95" complexity="0" loc="68" ncloc="68" packages="1" files="1" classes="1"/>
     <file name="doubly-linked-list.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/linked-list/doubly-linked-list/doubly-linked-list.js">
       <metrics statements="68" coveredstatements="63" conditionals="26" coveredconditionals="23" methods="10" coveredmethods="9"/>
-      <line num="3" count="25" type="stmt"/>
-      <line num="9" count="5" type="stmt"/>
-      <line num="10" count="5" type="stmt"/>
-      <line num="14" count="15" type="stmt"/>
-      <line num="15" count="15" type="stmt"/>
-      <line num="16" count="15" type="cond" truecount="2" falsecount="0"/>
-      <line num="17" count="15" type="stmt"/>
-      <line num="18" count="15" type="stmt"/>
+      <line num="3" count="31" type="stmt"/>
+      <line num="9" count="7" type="stmt"/>
+      <line num="10" count="7" type="stmt"/>
+      <line num="14" count="21" type="stmt"/>
+      <line num="15" count="21" type="stmt"/>
+      <line num="16" count="21" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="21" type="stmt"/>
+      <line num="18" count="21" type="stmt"/>
       <line num="22" count="0" type="stmt"/>
       <line num="23" count="0" type="stmt"/>
       <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -46,32 +46,32 @@
       <line num="77" count="2" type="stmt"/>
       <line num="81" count="6" type="stmt"/>
       <line num="82" count="6" type="stmt"/>
-      <line num="84" count="15" type="stmt"/>
-      <line num="87" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="88" count="4" type="stmt"/>
-      <line num="89" count="4" type="stmt"/>
-      <line num="91" count="2" type="stmt"/>
-      <line num="94" count="6" type="stmt"/>
+      <line num="83" count="15" type="stmt"/>
+      <line num="85" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="86" count="4" type="stmt"/>
+      <line num="87" count="4" type="stmt"/>
+      <line num="89" count="2" type="stmt"/>
+      <line num="92" count="6" type="stmt"/>
+      <line num="93" count="6" type="stmt"/>
       <line num="95" count="6" type="stmt"/>
-      <line num="97" count="6" type="stmt"/>
-      <line num="101" count="5" type="stmt"/>
-      <line num="103" count="12" type="stmt"/>
-      <line num="105" count="5" type="cond" truecount="4" falsecount="0"/>
-      <line num="106" count="1" type="stmt"/>
-      <line num="107" count="1" type="stmt"/>
-      <line num="108" count="4" type="cond" truecount="4" falsecount="0"/>
-      <line num="109" count="3" type="stmt"/>
-      <line num="110" count="1" type="cond" truecount="3" falsecount="1"/>
-      <line num="111" count="1" type="stmt"/>
-      <line num="112" count="1" type="stmt"/>
+      <line num="99" count="6" type="stmt"/>
+      <line num="101" count="15" type="stmt"/>
+      <line num="103" count="5" type="cond" truecount="4" falsecount="0"/>
+      <line num="104" count="1" type="stmt"/>
+      <line num="105" count="1" type="stmt"/>
+      <line num="106" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="107" count="3" type="stmt"/>
+      <line num="108" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="109" count="1" type="stmt"/>
+      <line num="110" count="1" type="stmt"/>
+      <line num="115" count="2" type="stmt"/>
+      <line num="116" count="2" type="stmt"/>
       <line num="117" count="2" type="stmt"/>
-      <line num="118" count="2" type="stmt"/>
-      <line num="119" count="2" type="stmt"/>
-      <line num="121" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="119" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="120" count="4" type="stmt"/>
+      <line num="121" count="4" type="stmt"/>
       <line num="122" count="4" type="stmt"/>
-      <line num="123" count="4" type="stmt"/>
-      <line num="124" count="4" type="stmt"/>
-      <line num="129" count="1" type="stmt"/>
+      <line num="127" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

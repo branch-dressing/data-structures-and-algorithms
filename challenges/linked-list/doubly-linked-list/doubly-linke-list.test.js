@@ -98,9 +98,17 @@ describe('Doubly Linked-List tests', () => {
             mergeListTwo.delete(8);
             mergeListTwo.delete(9);
             mergeListOne.mergeList(mergeListTwo);
-            expect(mergeListOne.toExplicitArray()).toEqual(['null<-0->10', '0<-10->1', '10<-1->2', '1<-2->null']);
-
+            expect(mergeListOne.toExplicitArray()).toEqual(
+                ['null<-0->10', '0<-10->1', '10<-1->2', '1<-2->null']);
         });
+        it('can still merge lists when first list is shorter', () => {
+            mergeListTwo.delete(1);
+            mergeListTwo.delete(2);
+            mergeListOne.mergeList(mergeListTwo);
+            expect(mergeListOne.toExplicitArray()).toEqual(
+                ['null<-0->10', '0<-10->1', '10<-9-8', '9<-8->null']);
+        });
+
     });
 });
 
