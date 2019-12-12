@@ -17,10 +17,10 @@ describe('Doubly Linked-List tests', () => {
     myDoubleLink.insert(2);
 
     describe('Doubly Linked List', () => {
-        it('have corrert previousNode value', () => {
+        it('have corrert preNode value', () => {
             expect(myDoubleLink.head.next.value).toEqual(1);
-            expect(myDoubleLink.head.next.next.previous.value).toEqual(1);
-            expect(myDoubleLink.head.next.next.previous.previous.value).toEqual(2);
+            expect(myDoubleLink.head.next.next.pre.value).toEqual(1);
+            expect(myDoubleLink.head.next.next.pre.pre.value).toEqual(2);
         });
     });
 
@@ -75,17 +75,17 @@ describe('Doubly Linked-List tests', () => {
     });
 
     describe('Mergin Linked List', () => {
-        const mergeListOne = new DoublyLinkedList(0);
+        const mergeListOne = new DoublyLinkedList(2);
         mergeListOne.insert(1);
-        mergeListOne.insert(2);
+        mergeListOne.insert(0);
 
-        const mergeListTwo = new DoublyLinkedList(10);
+        const mergeListTwo = new DoublyLinkedList(8);
         mergeListTwo.insert(9);
-        mergeListTwo.insert(8);
+        mergeListTwo.insert(10);
         it('can merge two even LL', () => {
-            mergeListOne.mergList(mergeListTwo)
+            mergeListOne.mergeList(mergeListTwo);
             expect(mergeListOne.toExplicitArray()).toEqual(
-                ['null<-2->b', '2<-b->c', 'b<-c->0', 'c<-0->a', '0<-a->null']
+                ['null<-0->10', '0<-10->1', '10<-1->9', '1<-9->2', '9<-2->8', '2<-8->null']
             );
         });
     });
