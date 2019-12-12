@@ -80,7 +80,9 @@ class DoublyLinkedList {
     insertAfter(value, newValue) {
         const insertedNode = new Node(newValue);
         let thisNode = this.head;
+
         while(thisNode.value !== value) thisNode = thisNode.next;
+        
         
         if(thisNode.next) {
             insertedNode.next = thisNode.next;
@@ -110,21 +112,31 @@ class DoublyLinkedList {
             this.head = thisNode.next;
         }
     }
+}
 
-    mergeList(list) {
-        let thisNodeOne = this.head;
-        let thisNodeTwo = list.head;
-        thisNodeTwo.head = null;
+function mergeList(listOne, listTwo) {
+    let thisNodeOne = listOne.head;
+    let thisNodeTwo = listTwo.head;
+    thisNodeTwo.head = null;
 
-        while(thisNodeOne && thisNodeTwo) {
-            this.insertAfter(thisNodeOne.value, thisNodeTwo.value);
-            thisNodeOne = thisNodeOne.next.next;
-            thisNodeTwo = thisNodeTwo.next;
-        }
+    while(thisNodeOne && thisNodeTwo) {
+        let holdMyNodeOne = thisNodeOne.next;
+        let holdMyNodeTwo = thisNodeTwo.next;
+
+        if(thisNodeOne.next) thisNodeTwo.next = thisNodeOne.next;
+        if(thisNodeOne.pre) thisNodeOne.pre = thisNodeTwo.pre;
+        thisNodeTwo.pre = thisNodeOne;
+        thisNodeOne.next = thisNodeTwo;
+
+        thisNodeOne = holdMyNodeOne;
+        thisNodeTwo = holdMyNodeTwo;
     }
+
+    if(thisNodeOne) thisNodeOne.pre = thisNodeOne.pre.next;
 }
 
 module.exports = {
     Node,
-    DoublyLinkedList
+    DoublyLinkedList,
+    mergeList
 };

@@ -1,6 +1,7 @@
 const { 
     Node,
-    DoublyLinkedList
+    DoublyLinkedList,
+    mergeList
 } = require('./doubly-linked-list');
 
 describe('Doubly Linked-List tests', () => {
@@ -89,7 +90,7 @@ describe('Doubly Linked-List tests', () => {
         });
 
         it('can merge two even LL', () => {
-            mergeListOne.mergeList(mergeListTwo);
+            mergeList(mergeListOne, mergeListTwo);
             expect(mergeListOne.toExplicitArray()).toEqual(
                 ['null<-0->10', '0<-10->1', '10<-1->9', '1<-9->2', '9<-2->8', '2<-8->null']
             );
@@ -97,16 +98,16 @@ describe('Doubly Linked-List tests', () => {
         it('can still merge lists when second list is shorter', () => {
             mergeListTwo.delete(8);
             mergeListTwo.delete(9);
-            mergeListOne.mergeList(mergeListTwo);
+            mergeList(mergeListOne, mergeListTwo);
             expect(mergeListOne.toExplicitArray()).toEqual(
                 ['null<-0->10', '0<-10->1', '10<-1->2', '1<-2->null']);
         });
         it('can still merge lists when first list is shorter', () => {
-            mergeListTwo.delete(1);
-            mergeListTwo.delete(2);
-            mergeListOne.mergeList(mergeListTwo);
+            mergeListOne.delete(1);
+            mergeListOne.delete(2);
+            mergeList(mergeListOne, mergeListTwo);
             expect(mergeListOne.toExplicitArray()).toEqual(
-                ['null<-0->10', '0<-10->1', '10<-9-8', '9<-8->null']);
+                ['null<-0->10', '0<-10->9', '10<-9->8', '9<-8->null']);
         });
 
     });
