@@ -75,18 +75,31 @@ describe('Doubly Linked-List tests', () => {
     });
 
     describe('Mergin Linked List', () => {
-        const mergeListOne = new DoublyLinkedList(2);
-        mergeListOne.insert(1);
-        mergeListOne.insert(0);
+        let mergeListOne;
+        let mergeListTwo;
 
-        const mergeListTwo = new DoublyLinkedList(8);
-        mergeListTwo.insert(9);
-        mergeListTwo.insert(10);
+        beforeEach(() => {
+            mergeListOne = new DoublyLinkedList(2);
+            mergeListOne.insert(1);
+            mergeListOne.insert(0);
+    
+            mergeListTwo = new DoublyLinkedList(8);
+            mergeListTwo.insert(9);
+            mergeListTwo.insert(10);
+        });
+
         it('can merge two even LL', () => {
             mergeListOne.mergeList(mergeListTwo);
             expect(mergeListOne.toExplicitArray()).toEqual(
                 ['null<-0->10', '0<-10->1', '10<-1->9', '1<-9->2', '9<-2->8', '2<-8->null']
             );
+        });
+        it('can still merge lists when second list is shorter', () => {
+            mergeListTwo.delete(8);
+            mergeListTwo.delete(9);
+            mergeListOne.mergeList(mergeListTwo);
+            expect(mergeListOne.toExplicitArray()).toEqual(['null<-0->10', '0<-10->1', '10<-1->2', '1<-2->null']);
+
         });
     });
 });
