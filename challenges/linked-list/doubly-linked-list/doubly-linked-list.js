@@ -119,18 +119,9 @@ class DoublyLinkedList {
         thisNodeTwo.head = null;
 
         while(thisNodeOne && thisNodeTwo) {
-            //shift pointers
-            let holdMyNodeOne = thisNodeOne.next;
-            let holdMyNodeTwo = thisNodeTwo.next;
-
-            thisNodeTwo.next = thisNodeOne.next;
-            if(thisNodeOne.pre) thisNodeOne.pre = thisNodeTwo.pre;
-            thisNodeTwo.pre = thisNodeOne;
-            thisNodeOne.next = thisNodeTwo;
-
-            //setup for next loop
-            thisNodeOne = holdMyNodeOne;
-            thisNodeTwo = holdMyNodeTwo;
+            this.insertAfter(thisNodeOne.value, thisNodeTwo.value);
+            thisNodeOne = thisNodeOne.next.next;
+            thisNodeTwo = thisNodeTwo.next;
         }
     }
 }
