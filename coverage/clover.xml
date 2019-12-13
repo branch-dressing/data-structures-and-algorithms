@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576212172225" clover="3.2.0">
-  <project timestamp="1576212172225" name="All files">
-    <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="5" elements="31" coveredelements="30" complexity="0" loc="21" ncloc="21" packages="1" files="1" classes="1"/>
+<coverage generated="1576213492876" clover="3.2.0">
+  <project timestamp="1576213492876" name="All files">
+    <metrics statements="33" coveredstatements="33" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6" elements="43" coveredelements="43" complexity="0" loc="33" ncloc="33" packages="1" files="1" classes="1"/>
     <file name="linked-list.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/linked-list/linked-list.js">
-      <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="5"/>
-      <line num="3" count="10" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="10" count="2" type="stmt"/>
-      <line num="14" count="9" type="stmt"/>
-      <line num="15" count="9" type="stmt"/>
-      <line num="16" count="9" type="stmt"/>
-      <line num="17" count="9" type="stmt"/>
+      <metrics statements="33" coveredstatements="33" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
+      <line num="3" count="18" type="stmt"/>
+      <line num="9" count="4" type="stmt"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="14" count="17" type="stmt"/>
+      <line num="15" count="17" type="stmt"/>
+      <line num="16" count="17" type="stmt"/>
+      <line num="17" count="17" type="stmt"/>
       <line num="21" count="4" type="stmt"/>
       <line num="22" count="4" type="stmt"/>
       <line num="23" count="16" type="cond" truecount="2" falsecount="0"/>
       <line num="24" count="13" type="stmt"/>
       <line num="26" count="1" type="stmt"/>
-      <line num="30" count="1" type="stmt"/>
-      <line num="31" count="1" type="stmt"/>
-      <line num="32" count="1" type="stmt"/>
-      <line num="33" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="34" count="1" type="stmt"/>
-      <line num="36" count="5" type="stmt"/>
-      <line num="38" count="6" type="stmt"/>
-      <line num="40" count="1" type="stmt"/>
-      <line num="48" count="1" type="stmt"/>
+      <line num="30" count="4" type="stmt"/>
+      <line num="31" count="4" type="stmt"/>
+      <line num="32" count="4" type="stmt"/>
+      <line num="33" count="17" type="cond" truecount="2" falsecount="0"/>
+      <line num="34" count="4" type="stmt"/>
+      <line num="36" count="13" type="stmt"/>
+      <line num="38" count="17" type="stmt"/>
+      <line num="40" count="4" type="stmt"/>
+      <line num="45" count="3" type="stmt"/>
+      <line num="46" count="3" type="stmt"/>
+      <line num="47" count="3" type="stmt"/>
+      <line num="49" count="3" type="stmt"/>
+      <line num="50" count="11" type="stmt"/>
+      <line num="51" count="11" type="stmt"/>
+      <line num="52" count="11" type="stmt"/>
+      <line num="55" count="3" type="stmt"/>
+      <line num="57" count="3" type="stmt"/>
+      <line num="58" count="11" type="stmt"/>
+      <line num="59" count="11" type="stmt"/>
+      <line num="60" count="11" type="stmt"/>
+      <line num="64" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

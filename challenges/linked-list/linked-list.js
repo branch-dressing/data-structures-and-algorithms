@@ -31,7 +31,7 @@ class LinkedList {
         let valuesStringed = '';
         while(thisNode){
             if(!thisNode.next) {
-                valuesStringed += thisNode.value;
+                valuesStringed += thisNode.value + '-> null';
             } else {
                 valuesStringed += thisNode.value + '-> ';
             }
@@ -42,10 +42,27 @@ class LinkedList {
 }
 
 function reverseList(list) {
+    let thisNode = list.head;
+    let holdMyNodes = [];
+    let i = 0;
+
+    while(thisNode) {
+        holdMyNodes[i] = thisNode.value;
+        i++;
+        thisNode = thisNode.next;
+    }
     
+    thisNode = list.head;
+
+    while(thisNode) {
+        i--;
+        thisNode.value = holdMyNodes[i];
+        thisNode = thisNode.next;
+    }
 }
 
 module.exports = {
     Node,
-    LinkedList
+    LinkedList,
+    reverseList
 };
