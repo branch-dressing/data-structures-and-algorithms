@@ -1,6 +1,7 @@
 const { 
     Node,
-    LinkedList
+    LinkedList,
+    reverseList
 } = require('./linked-list.js');
 
 describe('Linked-List tests', () => {
@@ -31,6 +32,15 @@ describe('Linked-List tests', () => {
         it('can turn return all node values as strings', () => {
             expect(myLinkedList.toString()).toEqual('5-> 4-> 3-> 2-> 1-> 0');
         });
+    });
 
+    describe('Reverse List', () => {
+        const myReverseList = new LinkedList(0);
+        myReverseList.insert(1);
+        myReverseList.insert(2);
+        it('can reverse a list', () => {
+            expect(reverseList(myReverseList)).toEqual('0-> 1-> 2');
+        });
     });
 });
+

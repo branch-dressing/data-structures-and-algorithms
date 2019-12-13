@@ -41,6 +41,10 @@ class LinkedList {
     }
 }
 
+function reverseList(list) {
+    
+}
+
 module.exports = {
     Node,
     LinkedList
