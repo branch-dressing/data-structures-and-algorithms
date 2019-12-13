@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576206740640" clover="3.2.0">
-  <project timestamp="1576206740640" name="All files">
-    <metrics statements="90" coveredstatements="85" conditionals="34" coveredconditionals="31" methods="11" coveredmethods="10" elements="135" coveredelements="126" complexity="0" loc="90" ncloc="90" packages="1" files="1" classes="1"/>
+<coverage generated="1576211764849" clover="3.2.0">
+  <project timestamp="1576211764849" name="All files">
+    <metrics statements="88" coveredstatements="83" conditionals="34" coveredconditionals="31" methods="11" coveredmethods="10" elements="133" coveredelements="124" complexity="0" loc="88" ncloc="88" packages="1" files="1" classes="1"/>
     <file name="doubly-linked-list.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/linked-list/doubly-linked-list/doubly-linked-list.js">
-      <metrics statements="90" coveredstatements="85" conditionals="34" coveredconditionals="31" methods="11" coveredmethods="10"/>
-      <line num="3" count="34" type="stmt"/>
-      <line num="9" count="9" type="stmt"/>
-      <line num="10" count="9" type="stmt"/>
-      <line num="14" count="28" type="stmt"/>
-      <line num="15" count="28" type="stmt"/>
-      <line num="16" count="28" type="cond" truecount="2" falsecount="0"/>
-      <line num="17" count="28" type="stmt"/>
-      <line num="18" count="28" type="stmt"/>
+      <metrics statements="88" coveredstatements="83" conditionals="34" coveredconditionals="31" methods="11" coveredmethods="10"/>
+      <line num="3" count="39" type="stmt"/>
+      <line num="9" count="11" type="stmt"/>
+      <line num="10" count="11" type="stmt"/>
+      <line num="14" count="33" type="stmt"/>
+      <line num="15" count="33" type="stmt"/>
+      <line num="16" count="33" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="33" type="stmt"/>
+      <line num="18" count="33" type="stmt"/>
       <line num="22" count="0" type="stmt"/>
       <line num="23" count="0" type="stmt"/>
       <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -77,23 +77,21 @@
       <line num="129" count="5" type="stmt"/>
       <line num="130" count="5" type="stmt"/>
       <line num="133" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="137" count="2" type="stmt"/>
-      <line num="138" count="2" type="stmt"/>
-      <line num="139" count="2" type="stmt"/>
-      <line num="140" count="2" type="stmt"/>
-      <line num="142" count="2" type="stmt"/>
-      <line num="143" count="7" type="stmt"/>
-      <line num="144" count="7" type="stmt"/>
-      <line num="145" count="7" type="stmt"/>
-      <line num="148" count="2" type="stmt"/>
-      <line num="150" count="2" type="stmt"/>
-      <line num="151" count="4" type="stmt"/>
-      <line num="152" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="153" count="1" type="stmt"/>
-      <line num="154" count="1" type="stmt"/>
+      <line num="137" count="4" type="stmt"/>
+      <line num="138" count="4" type="stmt"/>
+      <line num="139" count="4" type="stmt"/>
+      <line num="141" count="4" type="stmt"/>
+      <line num="142" count="12" type="stmt"/>
+      <line num="143" count="12" type="stmt"/>
+      <line num="144" count="12" type="stmt"/>
+      <line num="147" count="4" type="stmt"/>
+      <line num="149" count="4" type="stmt"/>
+      <line num="150" count="9" type="stmt"/>
+      <line num="151" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="152" count="1" type="stmt"/>
+      <line num="154" count="8" type="stmt"/>
       <line num="156" count="3" type="stmt"/>
-      <line num="160" count="2" type="stmt"/>
-      <line num="163" count="1" type="stmt"/>
+      <line num="159" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

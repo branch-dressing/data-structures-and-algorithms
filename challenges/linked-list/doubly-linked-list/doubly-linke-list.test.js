@@ -2,7 +2,7 @@ const {
     Node,
     DoublyLinkedList,
     mergeList,
-    isPalindrom
+    isPalindrome
 } = require('./doubly-linked-list');
 
 describe('Doubly Linked-List tests', () => {
@@ -112,23 +112,37 @@ describe('Doubly Linked-List tests', () => {
         });
     });
 
-    describe('Palindrome', () => {
-        const palindromList = new DoublyLinkedList('b');
-        palindromList.insert('o');
-        palindromList.insert('b');
+    describe('Palindromee', () => {
+        const palindromeList = new DoublyLinkedList('b');
+        palindromeList.insert('o');
+        palindromeList.insert('b');
 
-        it('will return true if LL is a palindrom', () => {
-            expect(isPalindrom(palindromList)).toEqual(true);
+        it('will return true if LL is a palindrome', () => {
+            expect(isPalindrome(palindromeList)).toEqual(true);
         });
 
-        const notPalindromList = new DoublyLinkedList('b');
-        notPalindromList.insert('o');
-        notPalindromList.insert('b');
-        notPalindromList.insert('q');
+        const notPalindromeList = new DoublyLinkedList('b');
+        notPalindromeList.insert('o');
+        notPalindromeList.insert('b');
+        notPalindromeList.insert('q');
         
         it('will return false if not a plindrom', () => {
-            expect(isPalindrom(notPalindromList)).toEqual(false);
-        })
+            expect(isPalindrome(notPalindromeList)).toEqual(false);
+        });
+
+        const oneValueList = new DoublyLinkedList(1);
+        it('will return true if LL is a palindrome with one value', () => {
+            expect(isPalindrome(oneValueList)).toEqual(true);
+        });
+
+        const fourValueList = new DoublyLinkedList('b');
+        fourValueList.insert('o');
+        fourValueList.insert('o');
+        fourValueList.insert('b');
+
+        it('will return true if LL is a palindrome', () => {
+            expect(isPalindrome(fourValueList)).toEqual(true);
+        });
 
     });
 

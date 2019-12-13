@@ -133,11 +133,10 @@ function mergeList(listOne, listTwo) {
     if(thisNodeOne) thisNodeOne.pre = thisNodeOne.pre.next;
 }
 
-function isPalindrom(linkedList) {
+function isPalindrome(linkedList) {
     let thisNode = linkedList.head;
-    let i = 0;
-    let returnBoolean = true;
     let validateArray = [];
+    let i = 0;
 
     while(thisNode) {
         validateArray[i] = thisNode.value;
@@ -146,23 +145,20 @@ function isPalindrom(linkedList) {
     }
 
     thisNode = linkedList.head;
-
+    
     while(thisNode) {
         i--;
         if(thisNode.value !== validateArray[i]) {
-            returnBoolean = false;
-            break;
+            return false;
         }
         thisNode = thisNode.next;
     }
-
-
-    return returnBoolean;
+    return true;
 }
 
 module.exports = {
     Node,
     DoublyLinkedList,
     mergeList,
-    isPalindrom
+    isPalindrome
 };
