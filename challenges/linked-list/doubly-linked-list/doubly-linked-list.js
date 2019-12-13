@@ -149,10 +149,9 @@ function isPalindrom(linkedList) {
 
     while(thisNode) {
         i--;
-        console.log(thisNode.value);
-        console.log(validateArray[i])
         if(thisNode.value !== validateArray[i]) {
-            return false;
+            returnBoolean = false;
+            break;
         }
         thisNode = thisNode.next;
     }

@@ -121,6 +121,15 @@ describe('Doubly Linked-List tests', () => {
             expect(isPalindrom(palindromList)).toEqual(true);
         });
 
+        const notPalindromList = new DoublyLinkedList('b');
+        notPalindromList.insert('o');
+        notPalindromList.insert('b');
+        notPalindromList.insert('q');
+        
+        it('will return false if not a plindrom', () => {
+            expect(isPalindrom(notPalindromList)).toEqual(false);
+        })
+
     });
 
 });
