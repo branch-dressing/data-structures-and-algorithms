@@ -1,7 +1,8 @@
 const { 
     Node,
     DoublyLinkedList,
-    mergeList
+    mergeList,
+    isPalindrom
 } = require('./doubly-linked-list');
 
 describe('Doubly Linked-List tests', () => {
@@ -109,7 +110,18 @@ describe('Doubly Linked-List tests', () => {
             expect(mergeListOne.toExplicitArray()).toEqual(
                 ['null<-0->10', '0<-10->9', '10<-9->8', '9<-8->null']);
         });
+    });
+
+    describe('Palindrome', () => {
+        const palindromList = new DoublyLinkedList('b');
+        palindromList.insert('o');
+        palindromList.insert('b');
+
+        it('will return true if LL is a palindrom', () => {
+            expect(isPalindrom(palindromList)).toEqual(true);
+        });
 
     });
+
 });
 

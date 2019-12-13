@@ -32,16 +32,15 @@ class DoublyLinkedList {
         let nodeArray = [];
 
         while(thisNode){
-            //Would this be a place for a ternary? Not a big fan of them, but this seems like it could turn two lines into one.
-            let prev = null;
-            if(thisNode.pre) prev = thisNode.pre.value;
+            let pre = null;
+            if(thisNode.pre) pre = thisNode.pre.value;
             
             let value = thisNode.value;
 
             let next = null;
             if(thisNode.next) next = thisNode.next.value;
 
-            nodeArray.push(`${prev}<-${value}->${next}`);
+            nodeArray.push(`${pre}<-${value}->${next}`);
             thisNode = thisNode.next;
         }
         
@@ -82,7 +81,6 @@ class DoublyLinkedList {
         let thisNode = this.head;
 
         while(thisNode.value !== value) thisNode = thisNode.next;
-        
         
         if(thisNode.next) {
             insertedNode.next = thisNode.next;
