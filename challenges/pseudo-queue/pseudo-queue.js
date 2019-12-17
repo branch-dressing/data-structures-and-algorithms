@@ -74,7 +74,6 @@ class PseudoQueue {
         if(!popStack.top && pushStack.top) this.transferStack(popStack, pushStack);
         
         let thisNode = popStack.top;
-
         while(thisNode) {
             string = string + thisNode.value + '->';
             thisNode = thisNode.next;
