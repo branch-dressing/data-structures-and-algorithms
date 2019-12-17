@@ -24,6 +24,6 @@ describe('Pseudo-Queue', () => {
 
     it('Psuedo Queue', () => {
         const myPsuedo = new PseudoQueue();
-        
-    })
+
+    });
 });
