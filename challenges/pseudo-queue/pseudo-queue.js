@@ -42,8 +42,8 @@ class PseudoQueue {
     enqueue(value) {
         let pushStack = this.pushStack;
         let popStack = this.popStack;
+
         if(!pushStack.top && popStack.top) {
-            console.log(value);
             let thisNode = popStack.top;
             while(thisNode) {
                 pushStack.push(thisNode.value);
@@ -55,8 +55,19 @@ class PseudoQueue {
     }
 
     dequeue() {
-        let currentStack = this.popStack;
-        currentStack.pop();
+        let popStack = this.popStack;
+        let pushStack = this.pushStack;
+
+        if(!popStack.top && pushStack.top) {
+            let thisNode = pushStack.top;
+            while(thisNode) {
+                popStack.push(thisNode.value);
+                pushStack.pop();
+                thisNode = pushStack.top;
+            }
+        }
+
+        popStack.pop();
     }
 
     toString() {

@@ -22,19 +22,31 @@ describe('Pseudo-Queue', () => {
         expect(myStack.peek()).toEqual(9);
     });
 
-    it('Psuedo Queue', () => {
+    describe('Psuedo Queue', () => {
         const myPsuedo = new PseudoQueue();
-        myPsuedo.enqueue(1);
-        myPsuedo.enqueue(2);
-        myPsuedo.enqueue(3);
-        myPsuedo.enqueue(4);
-        expect(myPsuedo.toString()).toEqual('1->2->3->4->null');
-        myPsuedo.dequeue();
-        expect(myPsuedo.toString()).toEqual('2->3->4->null');
-        myPsuedo.enqueue(5);
-        expect(myPsuedo.pushStack.peek()).toEqual(5);
-        expect(myPsuedo.popStack.peek()).toEqual(null);
-        expect(myPsuedo.toString()).toEqual('2->3->4->5->null');
+        it('can enqueue correctly', () => {
+            myPsuedo.enqueue(1);
+            myPsuedo.enqueue(2);
+            myPsuedo.enqueue(3);
+            myPsuedo.enqueue(4);
+            expect(myPsuedo.toString()).toEqual('1->2->3->4->null');
+        });
+
+        it('can dequeue correctly', () => {
+            myPsuedo.dequeue();
+            expect(myPsuedo.toString()).toEqual('2->3->4->null');
+        });
+
+        it('still works even when the info is in the other stack', () => {
+            myPsuedo.enqueue(5);
+            expect(myPsuedo.pushStack.peek()).toEqual(5);
+            expect(myPsuedo.popStack.peek()).toEqual(null);
+            expect(myPsuedo.toString()).toEqual('2->3->4->5->null');
+            myPsuedo.enqueue(6);
+            myPsuedo.dequeue();
+            expect(myPsuedo.toString()).toEqual('3->4->5->6->null');
+        });
+
 
     });
 });
