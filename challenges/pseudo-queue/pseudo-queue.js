@@ -66,7 +66,7 @@ class PseudoQueue {
     //we add 6 to the line use the push method.
     //end - 10 - 9 - 8 - 7 - 6 - top
 
-    //when we call enque
+    //when we call deque
     //we need to make sure its in the correct stack
     //if not transfer it over
     //end - 6 - 7 - 8 - 9 - 10 - top
@@ -74,7 +74,17 @@ class PseudoQueue {
 
     toString() {
         let currentStack = this.stackOne;
+        let transferStack = this.stackTwo;
         let thisNode = currentStack.top;
+
+        while(thisNode) {
+            transferStack.push(thisNode.value);
+            currentStack.pop();
+            thisNode = currentStack.top;
+        }
+
+        thisNode = transferStack.top;
+
         let string = '';
         while(thisNode) {
             string = string + thisNode.value + '->';
