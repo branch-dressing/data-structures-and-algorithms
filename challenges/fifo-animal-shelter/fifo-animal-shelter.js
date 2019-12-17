@@ -8,7 +8,7 @@ class Node {
 class AnimalShelter {
     constructor() {
         this.endOfLine = null;
-        this.frontOfLine = null
+        this.frontOfLine = null;
     }
 
     inTake(type, name) {
@@ -17,15 +17,25 @@ class AnimalShelter {
             this.frontOfLine = newNode;
         } else {
             this.endOfLine.next = newNode;
+            newNode.pre = this.endOfLine;
         }
         this.endOfLine = newNode;
     }
 
     adopt(preference) {
-        
-        
-        
-        return preference;
+        let currentNode = this.frontOfLine;
+
+        while(currentNode) {
+            if(currentNode.type === preference) {
+                if(currentNode.pre) currentNode.pre.next = currentNode.next;
+                if(currentNode.next) currentNode.next.pre = currentNode.pre;
+                if(this.frontOfLine === currentNode) this.frontOfLine = currentNode.next;
+                if(this.endOfLine === currentNode) this.endOfLine = currentNode.next;
+                return `You adopted ${currentNode.name} the ${currentNode.type}!`;
+            }
+            currentNode = currentNode.next;
+        } 
+        return 'Sorry, we don\'t have that kind of animal.';
     }
 
     whosHere() {

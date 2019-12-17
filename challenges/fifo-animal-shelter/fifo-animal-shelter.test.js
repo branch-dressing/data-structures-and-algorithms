@@ -11,7 +11,7 @@ describe('Animal Shelter', () => {
         expect(myShelter.whosHere()).toEqual(['A Dog named Sparky', 'A Cat named Ronny']);
     });
 
-    it('can remove an animal', () => {
-        expect(myShelter.adopt('Dog')).toEqual('You adopted Sparky the Dog!')
+    it('can remove an animal based on preference', () => {
+        expect(myShelter.adopt('Cat')).toEqual('You adopted Ronny the Cat!');
     });
 });
