@@ -39,18 +39,21 @@ class PseudoQueue {
         this.popStack = new Stack();
     }
 
+    transferStack(emptyStack, fullStack) {
+        let thisNode = fullStack.top;
+        while(thisNode) {
+            emptyStack.push(thisNode.value);
+            fullStack.pop();
+            thisNode = fullStack.top;
+        }
+    }
+
     enqueue(value) {
         let pushStack = this.pushStack;
         let popStack = this.popStack;
 
-        if(!pushStack.top && popStack.top) {
-            let thisNode = popStack.top;
-            while(thisNode) {
-                pushStack.push(thisNode.value);
-                popStack.pop();
-                thisNode = popStack.top;
-            }
-        }
+        if(!pushStack.top && popStack.top) this.transferStack(pushStack, popStack);
+
         pushStack.push(value);
     }
 
@@ -58,38 +61,25 @@ class PseudoQueue {
         let popStack = this.popStack;
         let pushStack = this.pushStack;
 
-        if(!popStack.top && pushStack.top) {
-            let thisNode = pushStack.top;
-            while(thisNode) {
-                popStack.push(thisNode.value);
-                pushStack.pop();
-                thisNode = pushStack.top;
-            }
-        }
+        if(!popStack.top && pushStack.top) this.transferStack(popStack, pushStack);
 
         popStack.pop();
     }
 
     toString() {
-        let currentStack = this.pushStack;
-        let transferStack = this.popStack;
-        let thisNode = currentStack.top;
-
-        while(thisNode) {
-            transferStack.push(thisNode.value);
-            currentStack.pop();
-            thisNode = currentStack.top;
-        }
-
-        thisNode = transferStack.top;
-
+        let pushStack = this.pushStack;
+        let popStack = this.popStack;
         let string = '';
+        
+        if(!popStack.top && pushStack.top) this.transferStack(popStack, pushStack);
+        
+        let thisNode = popStack.top;
+
         while(thisNode) {
             string = string + thisNode.value + '->';
             thisNode = thisNode.next;
         }
-        string = string + 'null';
-        return string;
+        return string + 'null';
     }
 
     whatStack() {
