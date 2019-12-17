@@ -53,18 +53,24 @@ class PseudoQueue {
         this.stackTwo = new Stack();
     }
 
-    enqueue(value) {
-        let currentStack = this.stackOne;
-        currentStack.push(value);
-    }
-
-
     //when we call enque
     //we need to make sure the contents is in the correct stack
     //if not transfer it over
     // end - 10 - 9 - 8 - 7 - top
     //we add 6 to the line use the push method.
     //end - 10 - 9 - 8 - 7 - 6 - top
+
+    enqueue(value) {
+        let currentStack = this.stackOne;
+        currentStack.push(value);
+    }
+
+    dequeue() {
+        let currentStack = this.stackTwo;
+        currentStack.pop();
+    }
+
+
 
     //when we call deque
     //we need to make sure its in the correct stack

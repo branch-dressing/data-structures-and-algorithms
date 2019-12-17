@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576598263776" clover="3.2.0">
-  <project timestamp="1576598263776" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1576598420348" clover="3.2.0">
+  <project timestamp="1576598420348" name="All files">
+    <metrics statements="33" coveredstatements="32" conditionals="5" coveredconditionals="3" methods="10" coveredmethods="9" elements="48" coveredelements="44" complexity="0" loc="33" ncloc="33" packages="1" files="1" classes="1"/>
+    <file name="pseudo-queue.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/pseudo-queue/pseudo-queue.js">
+      <metrics statements="33" coveredstatements="32" conditionals="5" coveredconditionals="3" methods="10" coveredmethods="9"/>
+      <line num="3" count="12" type="stmt"/>
+      <line num="4" count="12" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="14" count="11" type="stmt"/>
+      <line num="15" count="11" type="stmt"/>
+      <line num="19" count="6" type="cond" truecount="1" falsecount="1"/>
+      <line num="21" count="6" type="stmt"/>
+      <line num="22" count="6" type="stmt"/>
+      <line num="23" count="6" type="stmt"/>
+      <line num="27" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="32" count="0" type="stmt"/>
+      <line num="52" count="1" type="stmt"/>
+      <line num="53" count="1" type="stmt"/>
+      <line num="64" count="4" type="stmt"/>
+      <line num="65" count="4" type="stmt"/>
+      <line num="69" count="1" type="stmt"/>
+      <line num="70" count="1" type="stmt"/>
+      <line num="82" count="2" type="stmt"/>
+      <line num="83" count="2" type="stmt"/>
+      <line num="84" count="2" type="stmt"/>
+      <line num="86" count="2" type="stmt"/>
+      <line num="87" count="4" type="stmt"/>
+      <line num="88" count="4" type="stmt"/>
+      <line num="89" count="4" type="stmt"/>
+      <line num="92" count="2" type="stmt"/>
+      <line num="94" count="2" type="stmt"/>
+      <line num="95" count="2" type="stmt"/>
+      <line num="96" count="7" type="stmt"/>
+      <line num="97" count="7" type="stmt"/>
+      <line num="99" count="2" type="stmt"/>
+      <line num="100" count="2" type="stmt"/>
+      <line num="105" count="1" type="stmt"/>
+    </file>
   </project>
 </coverage>
