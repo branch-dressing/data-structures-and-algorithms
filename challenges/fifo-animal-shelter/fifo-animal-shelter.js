@@ -11,7 +11,7 @@ class AnimalShelter {
         this.frontOfLine = null
     }
 
-    enqueue(type, name) {
+    inTake(type, name) {
         const newNode = new Node(type, name);
         if(!this.frontOfLine) {
             this.frontOfLine = newNode;
@@ -19,6 +19,13 @@ class AnimalShelter {
             this.endOfLine.next = newNode;
         }
         this.endOfLine = newNode;
+    }
+
+    adopt(preference) {
+        
+        
+        
+        return preference;
     }
 
     whosHere() {
