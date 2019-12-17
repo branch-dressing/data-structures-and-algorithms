@@ -92,6 +92,11 @@ class PseudoQueue {
         return string;
     }
 
+    whatStack() {
+        if(this.popStack.top) return 'pop-stack';
+        if(this.pushStack.top) return 'push-stack';
+    }
+
 }
 
 module.exports = {

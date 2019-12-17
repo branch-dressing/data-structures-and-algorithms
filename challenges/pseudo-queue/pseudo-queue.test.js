@@ -42,7 +42,9 @@ describe('Pseudo-Queue', () => {
             expect(myPsuedo.pushStack.peek()).toEqual(5);
             expect(myPsuedo.popStack.peek()).toEqual(null);
             expect(myPsuedo.toString()).toEqual('2->3->4->5->null');
+            expect(myPsuedo.whatStack()).toEqual('pop-stack');
             myPsuedo.enqueue(6);
+            expect(myPsuedo.whatStack()).toEqual('push-stack');
             myPsuedo.dequeue();
             expect(myPsuedo.toString()).toEqual('3->4->5->6->null');
         });
