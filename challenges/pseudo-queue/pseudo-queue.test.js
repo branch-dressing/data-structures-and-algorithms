@@ -29,8 +29,8 @@ describe('Pseudo-Queue', () => {
         myPsuedo.enqueue(3);
         myPsuedo.enqueue(4);
         expect(myPsuedo.toString()).toEqual('1->2->3->4->null')
-        // myPsuedo.dequeue();
-        // expect(myPsuedo.toString()).toEqual('4->3->2->1->null')
+        myPsuedo.dequeue();
+        expect(myPsuedo.toString()).toEqual('4->3->2->1->null')
 
     });
 });
