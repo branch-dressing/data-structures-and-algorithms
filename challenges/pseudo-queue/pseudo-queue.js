@@ -38,6 +38,15 @@ class PseudoQueue {
         this.front = null;
     }
     //WHITEBOARING
+    //needs an enque
+    //takes a value
+    //adds a node to the end of the line
+    //must use a new stack.
+
+    //we need two stacks. perhaps we construct both?
+
+    //needs a deque
+    //removes a node from the start of the line.
 
 }
 

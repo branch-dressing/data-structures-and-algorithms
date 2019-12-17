@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576559500520" clover="3.2.0">
-  <project timestamp="1576559500520" name="All files">
+<coverage generated="1576559735248" clover="3.2.0">
+  <project timestamp="1576559735248" name="All files">
     <metrics statements="14" coveredstatements="13" conditionals="5" coveredconditionals="3" methods="7" coveredmethods="6" elements="26" coveredelements="22" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
     <file name="pseudo-queue.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/pseudo-queue/pseudo-queue.js">
       <metrics statements="14" coveredstatements="13" conditionals="5" coveredconditionals="3" methods="7" coveredmethods="6"/>
@@ -17,7 +17,7 @@
       <line num="28" count="1" type="stmt"/>
       <line num="32" count="0" type="stmt"/>
       <line num="38" count="1" type="stmt"/>
-      <line num="44" count="1" type="stmt"/>
+      <line num="53" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
