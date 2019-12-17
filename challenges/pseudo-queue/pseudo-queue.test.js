@@ -24,6 +24,10 @@ describe('Pseudo-Queue', () => {
 
     it('Psuedo Queue', () => {
         const myPsuedo = new PseudoQueue();
-
+        myPsuedo.enqueue(1);
+        myPsuedo.enqueue(2);
+        myPsuedo.enqueue(3);
+        myPsuedo.enqueue(4);
+        expect(myPsuedo.toString()).toEqual('1->2->3->4->null')
     });
 });

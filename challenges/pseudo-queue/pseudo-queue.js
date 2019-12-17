@@ -54,8 +54,8 @@ class PseudoQueue {
     }
 
     enqueue(value) {
-        let currentStack = 
-        if(currentStack)
+        //let currentStack = 
+        //if(currentStack)
     }
 
 
@@ -71,6 +71,17 @@ class PseudoQueue {
     //if not transfer it over
     //end - 6 - 7 - 8 - 9 - 10 - top
     //we pop from the stack
+
+    toString() {
+        let thisNode = this.front;
+        let string = '';
+        while(thisNode) {
+            string = string + thisNode.value + '->';
+            thisNode = thisNode.next;
+        }
+        string = string + '->null';
+        return string;
+    }
 
 }
 
