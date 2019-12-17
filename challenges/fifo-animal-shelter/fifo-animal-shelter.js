@@ -30,7 +30,7 @@ class AnimalShelter {
                 if(currentNode.pre) currentNode.pre.next = currentNode.next;
                 if(currentNode.next) currentNode.next.pre = currentNode.pre;
                 if(this.frontOfLine === currentNode) this.frontOfLine = currentNode.next;
-                if(this.endOfLine === currentNode) this.endOfLine = currentNode.next;
+                if(this.endOfLine === currentNode) this.endOfLine = currentNode.pre;
                 return `You adopted ${currentNode.name} the ${currentNode.type}!`;
             }
             currentNode = currentNode.next;
