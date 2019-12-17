@@ -23,28 +23,28 @@ class AnimalShelter {
     }
 
     adopt(preference) {
-        let currentNode = this.frontOfLine;
+        let thisNode = this.frontOfLine;
 
-        while(currentNode) {
-            if(currentNode.type === preference) {
-                if(currentNode.pre) currentNode.pre.next = currentNode.next;
-                if(currentNode.next) currentNode.next.pre = currentNode.pre;
-                if(this.frontOfLine === currentNode) this.frontOfLine = currentNode.next;
-                if(this.endOfLine === currentNode) this.endOfLine = currentNode.pre;
-                return `You adopted ${currentNode.name} the ${currentNode.type}!`;
+        while(thisNode) {
+            if(thisNode.type === preference) {
+                if(thisNode.pre) thisNode.pre.next = thisNode.next;
+                if(thisNode.next) thisNode.next.pre = thisNode.pre;
+                if(this.frontOfLine === thisNode) this.frontOfLine = thisNode.next;
+                if(this.endOfLine === thisNode) this.endOfLine = thisNode.pre;
+                return `You adopted ${thisNode.name} the ${thisNode.type}!`;
             }
-            currentNode = currentNode.next;
+            thisNode = thisNode.next;
         } 
         return 'Sorry, we don\'t have that kind of animal right now.';
     }
 
     whosHere() {
-        let currentNode = this.frontOfLine;
+        let thisNode = this.frontOfLine;
         let whoIsHere = [];
 
-        while(currentNode){
-            whoIsHere.push(`A ${currentNode.type} named ${currentNode.name}`);
-            currentNode = currentNode.next;
+        while(thisNode){
+            whoIsHere.push(`A ${thisNode.type} named ${thisNode.name}`);
+            thisNode = thisNode.next;
         }
         return whoIsHere;
     }
