@@ -54,8 +54,8 @@ class PseudoQueue {
     }
 
     enqueue(value) {
-        //let currentStack = 
-        //if(currentStack)
+        let currentStack = this.stackOne;
+        currentStack.push(value);
     }
 
 
@@ -73,13 +73,14 @@ class PseudoQueue {
     //we pop from the stack
 
     toString() {
-        let thisNode = this.front;
+        let currentStack = this.stackOne;
+        let thisNode = currentStack.top;
         let string = '';
         while(thisNode) {
             string = string + thisNode.value + '->';
             thisNode = thisNode.next;
         }
-        string = string + '->null';
+        string = string + 'null';
         return string;
     }
 
