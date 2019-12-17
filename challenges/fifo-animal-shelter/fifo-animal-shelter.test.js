@@ -7,6 +7,7 @@ describe('Animal Shelter', () => {
     it('can add an animal', () => {
         myShelter.enqueue('Dog', 'Sparky');
         expect(myShelter.whosHere()).toEqual(['A Dog named Sparky']);
-
+        myShelter.enqueue('Cat', 'Ronny');
+        expect(myShelter.whosHere()).toEqual(['A Dog named Sparky', 'A Cat named Ronny']);
     });
 });
