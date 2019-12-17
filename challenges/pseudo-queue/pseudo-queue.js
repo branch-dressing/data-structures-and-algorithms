@@ -33,54 +33,35 @@ class Stack {
     }
 }
 
-//WHITEBOARING
-//needs an enque
-//takes a value
-//adds a node to the end of the line
-//must use a new stack.
-
-//we need two stacks. perhaps we construct both?
-
-//needs a deque
-//removes a node from the start of the line.
-
 class PseudoQueue {
-    //Let's create two stacks.
-    //stack one is called adding
-    //stack two is called removing.
     constructor() {
-        this.stackOne = new Stack();
-        this.stackTwo = new Stack();
+        this.pushStack = new Stack();
+        this.popStack = new Stack();
     }
 
-    //when we call enque
-    //we need to make sure the contents is in the correct stack
-    //if not transfer it over
-    // end - 10 - 9 - 8 - 7 - top
-    //we add 6 to the line use the push method.
-    //end - 10 - 9 - 8 - 7 - 6 - top
-
     enqueue(value) {
-        let currentStack = this.stackOne;
-        currentStack.push(value);
+        let pushStack = this.pushStack;
+        let popStack = this.popStack;
+        if(!pushStack.top && popStack.top) {
+            console.log(value);
+            let thisNode = popStack.top;
+            while(thisNode) {
+                pushStack.push(thisNode.value);
+                popStack.pop();
+                thisNode = popStack.top;
+            }
+        }
+        pushStack.push(value);
     }
 
     dequeue() {
-        let currentStack = this.stackTwo;
+        let currentStack = this.popStack;
         currentStack.pop();
     }
 
-
-
-    //when we call deque
-    //we need to make sure its in the correct stack
-    //if not transfer it over
-    //end - 6 - 7 - 8 - 9 - 10 - top
-    //we pop from the stack
-
     toString() {
-        let currentStack = this.stackOne;
-        let transferStack = this.stackTwo;
+        let currentStack = this.pushStack;
+        let transferStack = this.popStack;
         let thisNode = currentStack.top;
 
         while(thisNode) {

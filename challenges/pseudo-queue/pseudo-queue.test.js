@@ -28,9 +28,13 @@ describe('Pseudo-Queue', () => {
         myPsuedo.enqueue(2);
         myPsuedo.enqueue(3);
         myPsuedo.enqueue(4);
-        expect(myPsuedo.toString()).toEqual('1->2->3->4->null')
+        expect(myPsuedo.toString()).toEqual('1->2->3->4->null');
         myPsuedo.dequeue();
-        expect(myPsuedo.toString()).toEqual('2->3->4->null')
+        expect(myPsuedo.toString()).toEqual('2->3->4->null');
+        myPsuedo.enqueue(5);
+        expect(myPsuedo.pushStack.peek()).toEqual(5);
+        expect(myPsuedo.popStack.peek()).toEqual(null);
+        expect(myPsuedo.toString()).toEqual('2->3->4->5->null');
 
     });
 });
