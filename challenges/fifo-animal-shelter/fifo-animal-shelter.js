@@ -35,7 +35,7 @@ class AnimalShelter {
             }
             currentNode = currentNode.next;
         } 
-        return 'Sorry, we don\'t have that kind of animal.';
+        return 'Sorry, we don\'t have that kind of animal right now.';
     }
 
     whosHere() {
