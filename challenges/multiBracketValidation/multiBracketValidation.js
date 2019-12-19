@@ -1,7 +1,7 @@
 function multiBracketValidation(stringToValidate) {
     let response = true;
-    let openers = ['(', '{', '['];
-    let openersArray = [];
+    const openers = ['(', '{', '['];
+    const openersArray = [];
 
     stringToValidate
         .match(/[{}[\]()]/g)
@@ -13,7 +13,7 @@ function multiBracketValidation(stringToValidate) {
             if(bracket === ']' && openersArray.pop() !== '[') response = false;
         });
 
-    if(openersArray.length > 0) response = false;
+    if(openersArray[0]) response = false;
     return response;
 }
 
