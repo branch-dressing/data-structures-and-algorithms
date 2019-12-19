@@ -14,8 +14,8 @@ function multiBracketValidation(string) {
             chars[i] === '[') openArray.push(chars[i]);
 
         if(chars[i] === ')' && openArray.pop() !== '(') return false;
-        if(chars[i] === '}' && openArray.pop() !== '(') return false;
-        if(chars[i] === ']' && openArray.pop() !== '(') return false;
+        if(chars[i] === '}' && openArray.pop() !== '{') return false;
+        if(chars[i] === ']' && openArray.pop() !== '[') return false;
     }
 
     return true;
