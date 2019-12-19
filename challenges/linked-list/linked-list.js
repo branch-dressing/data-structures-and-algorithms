@@ -28,9 +28,13 @@ class LinkedList {
 
     toString() {
         let thisNode = this.head;
-        let valuesStringed = [];
+        let valuesStringed = '';
         while(thisNode){
-            valuesStringed.push(thisNode.value);
+            if(!thisNode.next) {
+                valuesStringed += thisNode.value;
+            } else {
+                valuesStringed += thisNode.value + '-> ';
+            }
             thisNode = thisNode.next;
         }
         return valuesStringed;
