@@ -5,7 +5,7 @@ describe('Multi Bracket Validation', () => {
         expect(multiBracketValidation('()')).toEqual(true);
         expect(multiBracketValidation('[]')).toEqual(true);
         expect(multiBracketValidation('{}')).toEqual(true);
-    
+        expect(multiBracketValidation('[')).toEqual(false);
     });
 });
 
