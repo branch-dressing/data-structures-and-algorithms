@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576718795092" clover="3.2.0">
-  <project timestamp="1576718795092" name="All files">
-    <metrics statements="11" coveredstatements="11" conditionals="19" coveredconditionals="16" methods="1" coveredmethods="1" elements="31" coveredelements="28" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+<coverage generated="1576720008597" clover="3.2.0">
+  <project timestamp="1576720008597" name="All files">
+    <metrics statements="13" coveredstatements="13" conditionals="20" coveredconditionals="18" methods="1" coveredmethods="1" elements="34" coveredelements="32" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
     <file name="multiBracketValidation.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/multiBracketValidation/multiBracketValidation.js">
-      <metrics statements="11" coveredstatements="11" conditionals="19" coveredconditionals="16" methods="1" coveredmethods="1"/>
-      <line num="8" count="4" type="stmt"/>
-      <line num="9" count="4" type="stmt"/>
-      <line num="11" count="4" type="stmt"/>
-      <line num="12" count="7" type="cond" truecount="5" falsecount="0"/>
-      <line num="14" count="4" type="stmt"/>
-      <line num="16" count="7" type="cond" truecount="3" falsecount="1"/>
-      <line num="17" count="7" type="cond" truecount="3" falsecount="1"/>
-      <line num="18" count="7" type="cond" truecount="3" falsecount="1"/>
-      <line num="21" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="22" count="3" type="stmt"/>
-      <line num="25" count="1" type="stmt"/>
+      <metrics statements="13" coveredstatements="13" conditionals="20" coveredconditionals="18" methods="1" coveredmethods="1"/>
+      <line num="2" count="12" type="stmt"/>
+      <line num="3" count="12" type="stmt"/>
+      <line num="4" count="12" type="stmt"/>
+      <line num="5" count="12" type="stmt"/>
+      <line num="7" count="12" type="stmt"/>
+      <line num="8" count="75" type="cond" truecount="2" falsecount="0"/>
+      <line num="10" count="75" type="cond" truecount="3" falsecount="1"/>
+      <line num="12" count="75" type="cond" truecount="3" falsecount="1"/>
+      <line num="13" count="75" type="cond" truecount="4" falsecount="0"/>
+      <line num="14" count="74" type="cond" truecount="4" falsecount="0"/>
+      <line num="17" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="18" count="7" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
