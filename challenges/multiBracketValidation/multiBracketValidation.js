@@ -1,21 +1,20 @@
-function multiBracketValidation(string) {
-    let chars = string.split('');
+function multiBracketValidation(stringToValidate) {
+    let response = true;
     let openers = ['(', '{', '['];
-    let closers = [')', '}', ']'];
-    let openArray = [];
+    let openersArray = [];
+
+    stringToValidate
+        .match(/[{}[\]()]/g)
+        .forEach(bracket => {
+            if(openers.includes(bracket)) openersArray.push(bracket);
     
-    for(let i = 0; i < chars.length; i++) {
-        if(openers.includes(chars[i])) openArray.push(chars[i]);
+            if(bracket === ')' && openersArray.pop() !== '(') response = false;
+            if(bracket === '}' && openersArray.pop() !== '{') response = false;
+            if(bracket === ']' && openersArray.pop() !== '[') response = false;
+        });
 
-        if(closers.includes(chars[i]) && openArray > 0) return false;
-
-        if(chars[i] === ')' && openArray.pop() !== '(') return false;
-        if(chars[i] === '}' && openArray.pop() !== '{') return false;
-        if(chars[i] === ']' && openArray.pop() !== '[') return false;
-    }
-
-    if(openArray.length > 0) return false;
-    return true;
+    if(openersArray.length > 0) response = false;
+    return response;
 }
 
 module.exports = {
