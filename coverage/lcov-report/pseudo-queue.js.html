@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for doubly-linked-list.js</title>
+    <title>Code coverage report for pseudo-queue.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -16,7 +16,7 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="index.html">All files</a> doubly-linked-list.js
+      <a href="index.html">All files</a> pseudo-queue.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
@@ -180,6 +180,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">31x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">30x</span>
+<span class="cline-any cline-yes">30x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -197,12 +199,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">29x</span>
+<span class="cline-any cline-yes">29x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -227,32 +226,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -272,7 +267,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -306,17 +306,41 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">class Node {
-    constructor(value) {
+    constructor(value, next = null) {
         this.value = value;
+        this.next = next;
     }
 }
-&nbsp;
-class DoublyLinkedList {
-    constructor(value) {
-        this.head = null;
-        this.insert(value);
+  
+class Stack {
+    constructor() {
+        this.top = null;
     }
+  
+    push(value) {
+        const node = new Node(value, this.top);
+        this.top = node;
+    }
+  
+    pop() {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if(!this.top) <span class="cstat-no" title="statement not covered" >return null;</span>
+  
+        const top = this.top;
+        this.top = top.next;
+        return top;
+    }
+  
+    peek() {
+        if(!this.top) return null;
+        return this.top.value;
+    }
+  
+<span class="fstat-no" title="function not covered" >    is</span>Empty() {
+<span class="cstat-no" title="statement not covered" >        return !this.top;</span>
+    }
+}
 &nbsp;
     insert(value) {
         const newNode = new Node(value);
@@ -326,18 +350,18 @@ class DoublyLinkedList {
         return this;
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    in</span>cludes(value) {
-        let thisNode = <span class="cstat-no" title="statement not covered" >this.head;</span>
-<span class="cstat-no" title="statement not covered" >        while(thisNode){</span>
-<span class="cstat-no" title="statement not covered" >            if(thisNode.value === value) <span class="cstat-no" title="statement not covered" >return true;</span></span>
-<span class="cstat-no" title="statement not covered" >            thisNode = thisNode.next;</span>
+    transferStack(emptyStack, fullStack) {
+        let thisNode = fullStack.top;
+        while(thisNode) {
+            emptyStack.push(thisNode.value);
+            fullStack.pop();
+            thisNode = fullStack.top;
         }
-<span class="cstat-no" title="statement not covered" >        return false;</span>
     }
 &nbsp;
-    toExplicitArray() {
-        let thisNode = this.head;
-        let nodeArray = [];
+    enqueue(value) {
+        let pushStack = this.pushStack;
+        let popStack = this.popStack;
 &nbsp;
         while(thisNode){
             //Would this be a place for a ternary? Not a big fan of them, but this seems like it could turn two lines into one.
@@ -346,14 +370,7 @@ class DoublyLinkedList {
             
             let value = thisNode.value;
 &nbsp;
-            let next = null;
-            if(thisNode.next) next = thisNode.next.value;
-&nbsp;
-            nodeArray.push(`${prev}&lt;-${value}-&gt;${next}`);
-            thisNode = thisNode.next;
-        }
-        
-        return nodeArray;
+        pushStack.push(value);
     }
 &nbsp;
     append(value) {
@@ -434,7 +451,8 @@ class DoublyLinkedList {
 &nbsp;
 module.exports = {
     Node,
-    DoublyLinkedList
+    Stack,
+    PseudoQueue
 };
 &nbsp;</pre></td></tr>
 </table></pre>

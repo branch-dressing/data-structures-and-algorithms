@@ -113,3 +113,43 @@ describe('Doubly Linked-List tests', () => {
     });
 });
 
+describe('k-th value from end of a linked list', () => {
+    const doublyLinked2 = new DoublyLinkedList('a');
+    doublyLinked2.insert('b');
+    doublyLinked2.insert('c');
+    doublyLinked2.insert('d');
+
+    it('can return the value of k-th from end of a LL', () => {
+        expect(doublyLinked2.kthFromEnd(0)).toEqual('a');
+        expect(doublyLinked2.kthFromEnd(1)).toEqual('b');
+        expect(doublyLinked2.kthFromEnd(2)).toEqual('c');
+        expect(doublyLinked2.kthFromEnd(3)).toEqual('d');
+    });
+
+    it('can will let you know if you look for a k-th beyond the length', () => {
+        expect(doublyLinked2.kthFromEnd(4)).toEqual('Number exceeds length');
+        expect(doublyLinked2.kthFromEnd(100)).toEqual('Number exceeds length');
+    });
+
+    it('notifies if wrong input', () => {
+        expect(doublyLinked2.kthFromEnd('a')).toEqual('Input must be positive int');
+        expect(doublyLinked2.kthFromEnd(-1)).toEqual('Input must be positive int');
+    });
+});
+
+describe('LL find Middle', () => {
+    const findMiddleList = new DoublyLinkedList(1);
+    findMiddleList.insert(2);
+    findMiddleList.insert(3);
+
+    it('can find the middle of a LL', () => {
+        expect(findMiddleList.findMiddle()).toEqual(2);
+        findMiddleList.insert(4);
+        expect(findMiddleList.findMiddle()).toEqual(2);
+        findMiddleList.insert(5);
+        findMiddleList.insert(6);
+        expect(findMiddleList.findMiddle()).toEqual(3);
+    });
+
+});
+

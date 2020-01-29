@@ -112,6 +112,33 @@ class DoublyLinkedList {
             this.head = thisNode.next;
         }
     }
+
+    kthFromEnd(k) {
+        if(typeof k !== 'number' || k < 0) return 'Input must be positive int';
+        let thisNode = this.head;
+
+        while(thisNode.next) thisNode = thisNode.next;
+        for(let i = 0; i !== k; i++) {
+            if(!thisNode) break;
+            thisNode = thisNode.previous;
+        }
+
+        if(thisNode) return thisNode.value;
+        return 'Number exceeds length';
+    }
+
+    findMiddle() {
+        let thisNode = this.head;
+        let length = 0;
+        while(thisNode) {
+            length++;
+            thisNode = thisNode.next;
+        }
+        thisNode = this.head;
+        let midIndex = Math.floor(length / 2);
+        for(let i = 0; i < midIndex; i++) thisNode = thisNode.next;
+        return thisNode.value;
+    }
 }
 
 function mergeList(listOne, listTwo) {
