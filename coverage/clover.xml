@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1580259982127" clover="3.2.0">
-  <project timestamp="1580259982127" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1576601429241" clover="3.2.0">
+  <project timestamp="1576601429241" name="All files">
+    <metrics statements="39" coveredstatements="38" conditionals="21" coveredconditionals="19" methods="12" coveredmethods="11" elements="72" coveredelements="68" complexity="0" loc="39" ncloc="39" packages="1" files="1" classes="1"/>
+    <file name="pseudo-queue.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/pseudo-queue/pseudo-queue.js">
+      <metrics statements="39" coveredstatements="38" conditionals="21" coveredconditionals="19" methods="12" coveredmethods="11"/>
+      <line num="3" count="30" type="stmt"/>
+      <line num="4" count="30" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="14" count="29" type="stmt"/>
+      <line num="15" count="29" type="stmt"/>
+      <line num="19" count="23" type="cond" truecount="1" falsecount="1"/>
+      <line num="21" count="23" type="stmt"/>
+      <line num="22" count="23" type="stmt"/>
+      <line num="23" count="23" type="stmt"/>
+      <line num="27" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="28" count="2" type="stmt"/>
+      <line num="32" count="0" type="stmt"/>
+      <line num="38" count="1" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="43" count="5" type="stmt"/>
+      <line num="44" count="5" type="stmt"/>
+      <line num="45" count="20" type="stmt"/>
+      <line num="46" count="20" type="stmt"/>
+      <line num="47" count="20" type="stmt"/>
+      <line num="52" count="6" type="stmt"/>
+      <line num="53" count="6" type="stmt"/>
+      <line num="55" count="6" type="cond" truecount="4" falsecount="0"/>
+      <line num="57" count="6" type="stmt"/>
+      <line num="61" count="2" type="stmt"/>
+      <line num="62" count="2" type="stmt"/>
+      <line num="64" count="2" type="cond" truecount="4" falsecount="0"/>
+      <line num="66" count="2" type="stmt"/>
+      <line num="70" count="4" type="stmt"/>
+      <line num="71" count="4" type="stmt"/>
+      <line num="72" count="4" type="stmt"/>
+      <line num="74" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="76" count="4" type="stmt"/>
+      <line num="77" count="4" type="stmt"/>
+      <line num="78" count="15" type="stmt"/>
+      <line num="79" count="15" type="stmt"/>
+      <line num="81" count="4" type="stmt"/>
+      <line num="85" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="86" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="91" count="1" type="stmt"/>
+    </file>
   </project>
 </coverage>
