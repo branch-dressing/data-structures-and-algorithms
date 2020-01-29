@@ -13,7 +13,7 @@ class DoublyLinkedList {
     insert(value) {
         const newNode = new Node(value);
         newNode.next = this.head;
-        if(newNode.next) newNode.next.previous = newNode;
+        if(newNode.next) newNode.next.pre = newNode;
         this.head = newNode;
         return this;
     }
@@ -34,7 +34,7 @@ class DoublyLinkedList {
         while(thisNode){
             //Would this be a place for a ternary? Not a big fan of them, but this seems like it could turn two lines into one.
             let prev = null;
-            if(thisNode.previous) prev = thisNode.previous.value;
+            if(thisNode.pre) prev = thisNode.pre.value;
             
             let value = thisNode.value;
 
@@ -55,7 +55,7 @@ class DoublyLinkedList {
         while(thisNode.next) thisNode = thisNode.next;
         
         appendedNode.next = null;
-        appendedNode.previous = thisNode;
+        appendedNode.pre = thisNode;
         thisNode.next = appendedNode;
     }
 
@@ -65,15 +65,15 @@ class DoublyLinkedList {
 
         while(thisNode.value !== value) thisNode = thisNode.next;
 
-        if(thisNode.previous) {
-            insertedNode.previous = thisNode.previous;
-            thisNode.previous.next = insertedNode;
+        if(thisNode.pre) {
+            insertedNode.pre = thisNode.pre;
+            thisNode.pre.next = insertedNode;
         } else {
             this.head = insertedNode;
-            insertedNode.previous = null;
+            insertedNode.pre = null;
         }
 
-        thisNode.previous = insertedNode;
+        thisNode.pre = insertedNode;
         insertedNode.next = thisNode;
     }
 
@@ -86,12 +86,12 @@ class DoublyLinkedList {
         
         if(thisNode.next) {
             insertedNode.next = thisNode.next;
-            thisNode.next.previous = insertedNode;
+            thisNode.next.pre = insertedNode;
         } else {
             insertedNode.next = null;
         }
 
-        insertedNode.previous = thisNode;
+        insertedNode.pre = thisNode;
         insertedNode.next = thisNode.next;
 
         thisNode.next = insertedNode;
@@ -102,13 +102,13 @@ class DoublyLinkedList {
 
         while(thisNode.value !== value) thisNode = thisNode.next;
 
-        if(thisNode.next && thisNode.previous) {
-            thisNode.previous.next = thisNode.next;
-            thisNode.next.previous = thisNode.previous;
-        } else if(!thisNode.next && thisNode.previous) {
-            thisNode.previous.next = null;
-        } else if(thisNode.next && !thisNode.previous) {
-            thisNode.next.previous = null;
+        if(thisNode.next && thisNode.pre) {
+            thisNode.pre.next = thisNode.next;
+            thisNode.next.pre = thisNode.pre;
+        } else if(!thisNode.next && thisNode.pre) {
+            thisNode.pre.next = null;
+        } else if(thisNode.next && !thisNode.pre) {
+            thisNode.next.pre = null;
             this.head = thisNode.next;
         }
     }
@@ -141,7 +141,29 @@ class DoublyLinkedList {
     }
 }
 
+function mergeList(listOne, listTwo) {
+    let thisNodeOne = listOne.head;
+    let thisNodeTwo = listTwo.head;
+    thisNodeTwo.head = null;
+
+    while(thisNodeOne && thisNodeTwo) {
+        let holdMyNodeOne = thisNodeOne.next;
+        let holdMyNodeTwo = thisNodeTwo.next;
+
+        if(thisNodeOne.next) thisNodeTwo.next = thisNodeOne.next;
+        if(thisNodeOne.pre) thisNodeOne.pre = thisNodeTwo.pre;
+        thisNodeTwo.pre = thisNodeOne;
+        thisNodeOne.next = thisNodeTwo;
+
+        thisNodeOne = holdMyNodeOne;
+        thisNodeTwo = holdMyNodeTwo;
+    }
+
+    if(thisNodeOne) thisNodeOne.pre = thisNodeOne.pre.next;
+}
+
 module.exports = {
     Node,
-    DoublyLinkedList
+    DoublyLinkedList,
+    mergeList
 };

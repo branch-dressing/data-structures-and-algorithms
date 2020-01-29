@@ -1,6 +1,7 @@
 const { 
     Node,
-    DoublyLinkedList
+    DoublyLinkedList,
+    mergeList
 } = require('./doubly-linked-list');
 
 describe('Doubly Linked-List tests', () => {
@@ -17,10 +18,10 @@ describe('Doubly Linked-List tests', () => {
     myDoubleLink.insert(2);
 
     describe('Doubly Linked List', () => {
-        it('have corrert previousNode value', () => {
+        it('have corrert preNode value', () => {
             expect(myDoubleLink.head.next.value).toEqual(1);
-            expect(myDoubleLink.head.next.next.previous.value).toEqual(1);
-            expect(myDoubleLink.head.next.next.previous.previous.value).toEqual(2);
+            expect(myDoubleLink.head.next.next.pre.value).toEqual(1);
+            expect(myDoubleLink.head.next.next.pre.pre.value).toEqual(2);
         });
     });
 
@@ -72,6 +73,43 @@ describe('Doubly Linked-List tests', () => {
             expect(myDoubleLink.toExplicitArray()).toEqual(
                 ['null<-2->b', '2<-b->c', 'b<-c->0', 'c<-0->a', '0<-a->null']);
         });
+    });
+
+    describe('Mergin Linked List', () => {
+        let mergeListOne;
+        let mergeListTwo;
+
+        beforeEach(() => {
+            mergeListOne = new DoublyLinkedList(2);
+            mergeListOne.insert(1);
+            mergeListOne.insert(0);
+    
+            mergeListTwo = new DoublyLinkedList(8);
+            mergeListTwo.insert(9);
+            mergeListTwo.insert(10);
+        });
+
+        it('can merge two even LL', () => {
+            mergeList(mergeListOne, mergeListTwo);
+            expect(mergeListOne.toExplicitArray()).toEqual(
+                ['null<-0->10', '0<-10->1', '10<-1->9', '1<-9->2', '9<-2->8', '2<-8->null']
+            );
+        });
+        it('can still merge lists when second list is shorter', () => {
+            mergeListTwo.delete(8);
+            mergeListTwo.delete(9);
+            mergeList(mergeListOne, mergeListTwo);
+            expect(mergeListOne.toExplicitArray()).toEqual(
+                ['null<-0->10', '0<-10->1', '10<-1->2', '1<-2->null']);
+        });
+        it('can still merge lists when first list is shorter', () => {
+            mergeListOne.delete(1);
+            mergeListOne.delete(2);
+            mergeList(mergeListOne, mergeListTwo);
+            expect(mergeListOne.toExplicitArray()).toEqual(
+                ['null<-0->10', '0<-10->9', '10<-9->8', '9<-8->null']);
+        });
+
     });
 });
 
