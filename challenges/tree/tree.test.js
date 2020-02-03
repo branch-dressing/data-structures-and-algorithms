@@ -27,13 +27,15 @@ describe('Tree Test', () => {
   });
 
   it('can give the preorder', () => {
-    expect(myTree.preOrder()).toEqual([
-      10,
-      9,
-      2,
-      3,
-      15,
-      12
-    ]);
+    expect(myTree.preOrder()).toEqual([10, 9, 5, 2, 3, 15, 12]);
   });
+
+  it('can give the inOrder', () => {
+    expect(myTree.inOrder()).toEqual([2, 3, 5, 9, 10, 12, 15]);
+  });
+
+  it('can give the postOrder', () => {
+    expect(myTree.postOrder()).toEqual([2, 3, 5, 9, 10, 12, 15]);
+  });
+
 });

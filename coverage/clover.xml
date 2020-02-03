@@ -1,112 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1580765461791" clover="3.2.0">
-  <project timestamp="1580765461791" name="All files">
-    <metrics statements="88" coveredstatements="87" conditionals="39" coveredconditionals="36" methods="21" coveredmethods="20" elements="148" coveredelements="143" complexity="0" loc="88" ncloc="88" packages="3" files="3" classes="3"/>
-    <package name="linked-list">
-      <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
-      <file name="linked-list.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/linked-list/linked-list.js">
-        <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="14" count="6" type="stmt"/>
-        <line num="15" count="6" type="stmt"/>
-        <line num="16" count="6" type="stmt"/>
-        <line num="17" count="6" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
-        <line num="23" count="16" type="cond" truecount="2" falsecount="0"/>
-        <line num="24" count="13" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="36" count="5" type="stmt"/>
-        <line num="38" count="6" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="pseudo-queue">
-      <metrics statements="39" coveredstatements="38" conditionals="21" coveredconditionals="19" methods="12" coveredmethods="11"/>
-      <file name="pseudo-queue.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/pseudo-queue/pseudo-queue.js">
-        <metrics statements="39" coveredstatements="38" conditionals="21" coveredconditionals="19" methods="12" coveredmethods="11"/>
-        <line num="3" count="30" type="stmt"/>
-        <line num="4" count="30" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="14" count="29" type="stmt"/>
-        <line num="15" count="29" type="stmt"/>
-        <line num="19" count="23" type="cond" truecount="1" falsecount="1"/>
-        <line num="21" count="23" type="stmt"/>
-        <line num="22" count="23" type="stmt"/>
-        <line num="23" count="23" type="stmt"/>
-        <line num="27" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="43" count="5" type="stmt"/>
-        <line num="44" count="5" type="stmt"/>
-        <line num="45" count="20" type="stmt"/>
-        <line num="46" count="20" type="stmt"/>
-        <line num="47" count="20" type="stmt"/>
-        <line num="52" count="6" type="stmt"/>
-        <line num="53" count="6" type="stmt"/>
-        <line num="55" count="6" type="cond" truecount="4" falsecount="0"/>
-        <line num="57" count="6" type="stmt"/>
-        <line num="61" count="2" type="stmt"/>
-        <line num="62" count="2" type="stmt"/>
-        <line num="64" count="2" type="cond" truecount="4" falsecount="0"/>
-        <line num="66" count="2" type="stmt"/>
-        <line num="70" count="4" type="stmt"/>
-        <line num="71" count="4" type="stmt"/>
-        <line num="72" count="4" type="stmt"/>
-        <line num="74" count="4" type="cond" truecount="4" falsecount="0"/>
-        <line num="76" count="4" type="stmt"/>
-        <line num="77" count="4" type="stmt"/>
-        <line num="78" count="15" type="stmt"/>
-        <line num="79" count="15" type="stmt"/>
-        <line num="81" count="4" type="stmt"/>
-        <line num="85" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="86" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="91" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="tree">
-      <metrics statements="28" coveredstatements="28" conditionals="14" coveredconditionals="13" methods="4" coveredmethods="4"/>
-      <file name="tree.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/tree/tree.js">
-        <metrics statements="28" coveredstatements="28" conditionals="14" coveredconditionals="13" methods="4" coveredmethods="4"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="16" count="7" type="stmt"/>
-        <line num="17" count="7" type="stmt"/>
-        <line num="18" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="21" count="6" type="stmt"/>
-        <line num="22" count="6" type="stmt"/>
-        <line num="23" count="13" type="cond" truecount="2" falsecount="0"/>
-        <line num="24" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="4" type="stmt"/>
-        <line num="26" count="4" type="stmt"/>
-        <line num="28" count="6" type="stmt"/>
-        <line num="30" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="31" count="2" type="stmt"/>
-        <line num="32" count="2" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="38" count="7" type="stmt"/>
-        <line num="42" count="10" type="stmt"/>
-        <line num="43" count="10" type="stmt"/>
-        <line num="44" count="29" type="cond" truecount="2" falsecount="0"/>
-        <line num="45" count="22" type="cond" truecount="2" falsecount="0"/>
-        <line num="46" count="6" type="cond" truecount="1" falsecount="1"/>
-        <line num="48" count="3" type="stmt"/>
-        <line num="82" count="1" type="stmt"/>
-      </file>
-    </package>
+<coverage generated="1580766424971" clover="3.2.0">
+  <project timestamp="1580766424971" name="All files">
+    <metrics statements="42" coveredstatements="42" conditionals="22" coveredconditionals="21" methods="8" coveredmethods="8" elements="72" coveredelements="71" complexity="0" loc="42" ncloc="42" packages="1" files="1" classes="1"/>
+    <file name="tree.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/tree/tree.js">
+      <metrics statements="42" coveredstatements="42" conditionals="22" coveredconditionals="21" methods="8" coveredmethods="8"/>
+      <line num="3" count="7" type="stmt"/>
+      <line num="4" count="7" type="stmt"/>
+      <line num="5" count="7" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="16" count="7" type="stmt"/>
+      <line num="17" count="7" type="stmt"/>
+      <line num="18" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="21" count="6" type="stmt"/>
+      <line num="22" count="6" type="stmt"/>
+      <line num="23" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="4" type="stmt"/>
+      <line num="26" count="4" type="stmt"/>
+      <line num="28" count="6" type="stmt"/>
+      <line num="30" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="31" count="2" type="stmt"/>
+      <line num="32" count="2" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="38" count="7" type="stmt"/>
+      <line num="42" count="10" type="stmt"/>
+      <line num="43" count="10" type="stmt"/>
+      <line num="44" count="29" type="cond" truecount="2" falsecount="0"/>
+      <line num="45" count="22" type="cond" truecount="2" falsecount="0"/>
+      <line num="46" count="6" type="cond" truecount="1" falsecount="1"/>
+      <line num="48" count="3" type="stmt"/>
+      <line num="52" count="7" type="stmt"/>
+      <line num="53" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="54" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="58" count="1" type="stmt"/>
+      <line num="59" count="1" type="stmt"/>
+      <line num="60" count="1" type="stmt"/>
+      <line num="61" count="1" type="stmt"/>
+      <line num="65" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="66" count="7" type="stmt"/>
+      <line num="67" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="71" count="1" type="stmt"/>
+      <line num="72" count="1" type="stmt"/>
+      <line num="73" count="1" type="stmt"/>
+      <line num="74" count="1" type="stmt"/>
+      <line num="87" count="1" type="stmt"/>
+    </file>
   </project>
 </coverage>

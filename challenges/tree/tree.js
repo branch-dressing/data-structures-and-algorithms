@@ -48,26 +48,31 @@ class BinaryTree {
     return false;
   }
 
-  // preOrder() {
-  //   const array = [];
-  //   function recursion(currentNode = this.root) {
-  //     array.push(currentNode.value);
-  
-  //     if(currentNode.left) this.recursion(currentNode.left);
-  //     if(currentNode.right) this.recursion(currentNode.right);
-      
-  //   }
+  preOrderRecursion(node, array) {
+    array.push(node.value);
+    if(node.left) this.preOrderRecursion(node.left, array);
+    if(node.right) this.preOrderRecursion(node.right, array);
+  }
 
+  preOrder() {
+    const array = [];
+    let currentNode = this.root;
+    this.preOrderRecursion(currentNode, array);    
+    return array;
+  }
 
-    //While there's a left node
-    //add current node value to array
-    //left node, go there
-    //if
+  inOrderRecursion(node, array) {
+    if(node.left) this.inOrderRecursion(node.left, array);
+    array.push(node.value);
+    if(node.right) this.inOrderRecursion(node.right, array);
+  }
 
-    //
-
-    //return array;
-  //}
+  inOrder() {
+    const array = [];
+    let currentNode = this.root;
+    this.inOrderRecursion(currentNode, array);    
+    return array;
+  }
 
 
 }
