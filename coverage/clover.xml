@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1580766424971" clover="3.2.0">
-  <project timestamp="1580766424971" name="All files">
-    <metrics statements="42" coveredstatements="42" conditionals="22" coveredconditionals="21" methods="8" coveredmethods="8" elements="72" coveredelements="71" complexity="0" loc="42" ncloc="42" packages="1" files="1" classes="1"/>
+<coverage generated="1580766484838" clover="3.2.0">
+  <project timestamp="1580766484838" name="All files">
+    <metrics statements="49" coveredstatements="49" conditionals="26" coveredconditionals="25" methods="10" coveredmethods="10" elements="85" coveredelements="84" complexity="0" loc="49" ncloc="49" packages="1" files="1" classes="1"/>
     <file name="tree.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/tree/tree.js">
-      <metrics statements="42" coveredstatements="42" conditionals="22" coveredconditionals="21" methods="8" coveredmethods="8"/>
+      <metrics statements="49" coveredstatements="49" conditionals="26" coveredconditionals="25" methods="10" coveredmethods="10"/>
       <line num="3" count="7" type="stmt"/>
       <line num="4" count="7" type="stmt"/>
       <line num="5" count="7" type="stmt"/>
@@ -45,7 +45,14 @@
       <line num="72" count="1" type="stmt"/>
       <line num="73" count="1" type="stmt"/>
       <line num="74" count="1" type="stmt"/>
+      <line num="78" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="79" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="80" count="7" type="stmt"/>
+      <line num="84" count="1" type="stmt"/>
+      <line num="85" count="1" type="stmt"/>
+      <line num="86" count="1" type="stmt"/>
       <line num="87" count="1" type="stmt"/>
+      <line num="100" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

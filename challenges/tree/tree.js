@@ -74,6 +74,19 @@ class BinaryTree {
     return array;
   }
 
+  postOrderRecursion(node, array) {
+    if(node.left) this.postOrderRecursion(node.left, array);
+    if(node.right) this.postOrderRecursion(node.right, array);
+    array.push(node.value);
+  }
+
+  postOrder() {
+    const array = [];
+    let currentNode = this.root;
+    this.postOrderRecursion(currentNode, array);    
+    return array;
+  }
+
 
 }
 

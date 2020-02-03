@@ -35,7 +35,7 @@ describe('Tree Test', () => {
   });
 
   it('can give the postOrder', () => {
-    expect(myTree.postOrder()).toEqual([2, 3, 5, 9, 10, 12, 15]);
+    expect(myTree.postOrder()).toEqual([3, 2, 5, 9, 12, 15, 10]);
   });
 
 });
