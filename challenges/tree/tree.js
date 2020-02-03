@@ -48,42 +48,32 @@ class BinaryTree {
     return false;
   }
 
-  preOrderRecursion(node, array) {
-    array.push(node.value);
-    if(node.left) this.preOrderRecursion(node.left, array);
-    if(node.right) this.preOrderRecursion(node.right, array);
+  orderHelper(order, node, array) {
+    if(order === 'pre') array.push(node.value);
+    if(node.left) this.orderHelper(order, node.left, array);
+    if(order === 'in') array.push(node.value);
+    if(node.right) this.orderHelper(order, node.right, array);
+    if(order === 'post') array.push(node.value);
   }
 
   preOrder() {
     const array = [];
     let currentNode = this.root;
-    this.preOrderRecursion(currentNode, array);    
+    this.orderHelper('pre', currentNode, array);    
     return array;
-  }
-
-  inOrderRecursion(node, array) {
-    if(node.left) this.inOrderRecursion(node.left, array);
-    array.push(node.value);
-    if(node.right) this.inOrderRecursion(node.right, array);
   }
 
   inOrder() {
     const array = [];
     let currentNode = this.root;
-    this.inOrderRecursion(currentNode, array);    
+    this.orderHelper('in', currentNode, array);    
     return array;
-  }
-
-  postOrderRecursion(node, array) {
-    if(node.left) this.postOrderRecursion(node.left, array);
-    if(node.right) this.postOrderRecursion(node.right, array);
-    array.push(node.value);
   }
 
   postOrder() {
     const array = [];
     let currentNode = this.root;
-    this.postOrderRecursion(currentNode, array);    
+    this.orderHelper('post', currentNode, array);    
     return array;
   }
 
