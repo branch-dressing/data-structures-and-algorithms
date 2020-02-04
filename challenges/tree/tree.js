@@ -77,15 +77,27 @@ class BinaryTree {
     return array;
   }
 
+  breadthHelper(node, array) {
+    array.push(node.value);
+    array.push(node.left.value);
+    array.push(node.right.value);
+  }
+
+  breadthFirst() {
+    const results = [];
+    let queue = [];
+    queue.push(this.root);
+
+    while(queue.length > 0) {
+      results.push(queue[0].value);
+      if(queue[0].left) queue.push(queue[0].left);
+      if(queue[0].right) queue.push(queue[0].right);
+      queue.shift();
+    }
+    return results;
+  }
 
 }
-
-// sethContains(node = this.root, value) {
-//   if(!node) return false; 
-//   if(value < node.value) return this.sethContains(node.left, value); 
-//   if(value > node.value) return this.sethContains(node.right, value); 
-//   else return (value === node.value);
-// }
 
 module.exports = {
   Node,
