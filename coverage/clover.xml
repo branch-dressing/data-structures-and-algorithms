@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1580777223075" clover="3.2.0">
-  <project timestamp="1580777223075" name="All files">
-    <metrics statements="57" coveredstatements="54" conditionals="28" coveredconditionals="27" methods="10" coveredmethods="9" elements="95" coveredelements="90" complexity="0" loc="57" ncloc="57" packages="1" files="1" classes="1"/>
+<coverage generated="1580777359410" clover="3.2.0">
+  <project timestamp="1580777359410" name="All files">
+    <metrics statements="54" coveredstatements="54" conditionals="28" coveredconditionals="27" methods="9" coveredmethods="9" elements="91" coveredelements="90" complexity="0" loc="54" ncloc="54" packages="1" files="1" classes="1"/>
     <file name="tree.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/data-structures-and-algorithms/challenges/tree/tree.js">
-      <metrics statements="57" coveredstatements="54" conditionals="28" coveredconditionals="27" methods="10" coveredmethods="9"/>
+      <metrics statements="54" coveredstatements="54" conditionals="28" coveredconditionals="27" methods="9" coveredmethods="9"/>
       <line num="3" count="16" type="stmt"/>
       <line num="4" count="16" type="stmt"/>
       <line num="5" count="16" type="stmt"/>
@@ -48,19 +48,16 @@
       <line num="75" count="1" type="stmt"/>
       <line num="76" count="1" type="stmt"/>
       <line num="77" count="1" type="stmt"/>
-      <line num="81" count="0" type="stmt"/>
-      <line num="82" count="0" type="stmt"/>
-      <line num="83" count="0" type="stmt"/>
-      <line num="87" count="1" type="stmt"/>
-      <line num="88" count="1" type="stmt"/>
-      <line num="89" count="1" type="stmt"/>
+      <line num="81" count="1" type="stmt"/>
+      <line num="82" count="1" type="stmt"/>
+      <line num="83" count="1" type="stmt"/>
+      <line num="85" count="1" type="stmt"/>
+      <line num="86" count="9" type="stmt"/>
+      <line num="87" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="88" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="89" count="9" type="stmt"/>
       <line num="91" count="1" type="stmt"/>
-      <line num="92" count="9" type="stmt"/>
-      <line num="93" count="9" type="cond" truecount="2" falsecount="0"/>
-      <line num="94" count="9" type="cond" truecount="2" falsecount="0"/>
-      <line num="95" count="9" type="stmt"/>
-      <line num="97" count="1" type="stmt"/>
-      <line num="102" count="1" type="stmt"/>
+      <line num="96" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

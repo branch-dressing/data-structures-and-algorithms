@@ -77,12 +77,6 @@ class BinaryTree {
     return array;
   }
 
-  breadthHelper(node, array) {
-    array.push(node.value);
-    array.push(node.left.value);
-    array.push(node.right.value);
-  }
-
   breadthFirst() {
     const results = [];
     let queue = [];
