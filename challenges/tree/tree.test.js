@@ -55,6 +55,6 @@ describe('Tree Test', () => {
   it('can get the maximum value', () => {
     expect(myTree.findMaximunValue()).toEqual(15);
     expect(breadthTree.findMaximunValue()).toEqual(15);
-  })
+  });
 
 });
